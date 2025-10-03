@@ -1,0 +1,26 @@
+<!-- GLOSSARY TABLE -->
+    <div class="dataset-table-wrapper">
+        <div class="table-responsive print-avoid">
+            <table class="table accordian table-compact table-terms table-bordered table-dataset">
+              <table id="glossaryTable" class="table accordian table-compact table-terms table-hover table-bordered table-dataset">
+                <thead>
+                  <tr>
+                    <th class="col-md-3">Term</th>
+                    <th class="col-md-6">Definition</th>
+                    <th class="col-md-2">Source</th>
+                    <th class="col-md-1">Scope</th>
+                  </tr>
+            </thead>
+            <tbody>
+              {% for k,v in entries.iterrows() %}
+                <tr class="glossary-entry">
+                    <td>{{ v['term'] }}</td>
+                    <td>{{ v['definition'] }}</td>
+                    <td>{{ v['source'] }}</td>
+                    <td class="{{ v['scope'] }}-scope">{{ v['scope'] }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+            </table>
+        </div>
+    </div>

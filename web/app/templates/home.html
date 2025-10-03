@@ -1,12 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-</head>
-<body>
-
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block main %}
+ <div class="row">
+    <div class="col">
+        <section class="doc-section">
+             {{ home_markdown }}
+        </section>
+    </div>
+</div>
+{% endblock %}

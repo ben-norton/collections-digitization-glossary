@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+ <div class="row">
+    <div class="col background-white">
+        <h1 class="page-title">Glossary</h1>
+        <section class="doc-section">
+             {{ glossary_markdown }}
+        </section>
+        <section class="doc-section background-white">
+            {% include 'includes/glossary/glossary-table.html' %}
+        </section>
+      <section class="doc-section">
+            <h3 class="section-title">Glossary Sources</h3>
+            {% include 'includes/glossary/sources-table.html' %}
+        </section>
+    </div>
+ </div>
+{% endblock %}

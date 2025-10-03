@@ -17,6 +17,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\web\app\data\glossary-entries.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\web\app\data\glossary-sources.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

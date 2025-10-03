@@ -1,4 +1,4 @@
-Title,Namespace,Description,URL
+title,namespace,description,url
 Allotrope Foundation Ontology,AFO,Allotrope Foundation Ontology Merged Without QUDT And Inferred (REC/2022/12),https://ontobee.org/ontology/AFO
 BPMN Based Ontology,BBO,BBO is a business process ontology. The core element of BBO is a formalization of a BPMN 2.0 fragment (namely Chapter 10 of BPMN 2.0 specification). BPMN 2.0 is state-of-the-art meta-model of business processes.,https://www.irit.fr/recherches/MELODI/ontologies/BBO/index-en.html
 The Biological Collections Ontology,BCO,"The BCO supports the interoperability of biodiversity and biodiversity related data, including data on museum collections, environmental/metagenomic samples, and ecological surveys. A key aspect of the BCO is distinguishing among material samples (i.e. specimens), observing processes, and data about either of those entities.",

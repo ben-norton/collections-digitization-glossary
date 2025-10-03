@@ -7,12 +7,13 @@ import markdown2
 import pandas as pd
 import yaml
 from pathlib import Path
-import globals as cfg
+import os
 
-root_dir = cfg.get_project_root()
+
+cfg = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 
 current_dir = Path.cwd()
-build_dir = str(root_dir) + '/web/app/build'
+build_dir = cfg + '/web/app/build'
 app = Flask(__name__, template_folder='templates')
 freezer = Freezer(app)
 
@@ -22,6 +23,7 @@ app.config['FREEZER_DESTINATION'] = 'build'
 app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_RELATIVE_URLS_PRETTY'] = True
 app.config['FREEZER_IGNORE_MIMETYPE_WARNINGS'] = True
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 with open('meta.yml') as metadata:
     meta = yaml.safe_load(metadata)
@@ -56,13 +58,18 @@ def glossary():
         marked_text = markdown2.markdown(f.read(), extras=["tables", "fenced-code-blocks"])
 
     # Read Transformed Glossary CSV
-    glossary_csv = str(root_dir) + 'sources/output/glossary.tsv'   
-    glossary_df = pd.read_csv(glossary_csv, sep='\t', lineterminator='\n', encoding='utf-8')
-    glossary_df = glossary_df.sort_values(by=['Term'])
+    glossary_csv = 'data/glossary-entries.csv'
+    glossary_df = pd.read_csv(glossary_csv, encoding='utf-8')
+
+    # Sources
+    sources_csv = 'data/glossary-sources.csv'
+    sources_df = pd.read_csv(sources_csv, encoding='utf-8')
+#    sources_df = sources_df.sort_values(by=['title'])
 
     return render_template('glossary.html',
                            datasets_markdown=Markup(marked_text),
-                           glossary=glossary_df,
+                           entries=glossary_df,
+                           sources=sources_df,
                            pageTitle='Glossary',
                            title=meta['title'],
                            githubRepo=meta['github-repo'],

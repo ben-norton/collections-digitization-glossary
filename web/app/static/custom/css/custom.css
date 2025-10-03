@@ -4,6 +4,26 @@ Custom Doc Styles
 
 https://themewagon.github.io/codrops-scribbler/doc.html
 */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+}
+.btn.btn-primary {
+    --bs-btn-padding-x: .75rem;
+    --bs-btn-padding-y: 0.25rem;
+}
+.container-fluid {
+    --bs-gutter-x: 10px;
+}
+.table-title.th-collapser.col-md-3,
+.table-title.th-collapser.col-md-3,
+.table-title.th-collapser.col-md-3,
+.table-title.th-collapser.col-md-3,
+table tbody tr td {
+    font-weight: 400;
+}
 :root {
   --primary-color: #2E338B;
   --primary-color-light: #3F46C0;
@@ -19,6 +39,10 @@ https://themewagon.github.io/codrops-scribbler/doc.html
   --code-bg-color: #F0E8E8;
     --text-color: #4A4A4A;
 }
+.wrapper.container-fluid,
+.wrapper.container-fluid > .row {
+    --bs-gutter-x: 0;
+}
 html, body {
     padding: 0;
     margin: 0;
@@ -33,10 +57,13 @@ nav.navbar.bg-body-tertiary {
     color: var(--primary-color-dark);
     font-weight: 600;
 }
+.main.main-content {
+    padding: 20px 50px 50px 10px;
+}
 .container.wrapper {
 }
 aside.sidebar {
-    padding-top: 30px;
+
 }
 main.main {
     padding: 30px 0 0 0;
@@ -46,9 +73,55 @@ footer.footer {
     background-color: #F2F2F5;
     color: var(--text-color);
 }
+.wrapper.container-fluid {
+
+}
+/* Buttons ------------------------------ */
+.btn.btn-primary {
+    background-color:  #004643;
+    border-color: #DCDCDC;
+    height: 100%;
+    color: #F0EDE5;
+}
+.btn.btn-primary i {
+    color:#F0EDE5;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+    background-color: #003C39;
+    border-color: #DCDCDC;
+}
+.btn.btn-secondary i {
+
+}
 /* Sidebar Nav ----------------------------------- */
+.col-md-2.sidebar-col {
+    padding: 0;
+  border-right: 5px solid #FFF;
+}
+li.nav-btn.list-group-item a {
+    color: #F0EDE5;
+}
 .sidebar {
     font-weight: 200;
+}
+.sidebar-col {
+    background-color: #004643 !important;
+}
+.navbar {
+    border-bottom: #FFFFFF;
+}
+.sidebar-nav.list-group {
+    margin-right: 5px;
+}
+.sidebar .sidebar-nav .nav-btn {
+    background: #004643;
+    border-top: 1px solid #F0EDE5;
+    border-bottom: 1px solid #F0EDE5;
+    border-left: none;
+    border-right: none;
+    color: #F0EDE5;
 }
 /*
 .sidebar ul.sidebar-nav {
@@ -83,7 +156,16 @@ footer.footer {
 }
 .sidebar ul.sidebar-nav li:hover {
     background: rgba(220,220,220,0.2);
-    border-right: 5px solid var(--primary-color);
+    border-right: 5px solid #F0EDE5;
+}
+.table-row-style {
+    font-weight: 400;
+}
+.glossary-entry td {
+    font-weight: 400;
+}
+.background-white {
+    background: #FFFFFF !important;
 }
 /* Typography ----------------------------------- */
 
@@ -94,8 +176,21 @@ h1 {
     font-weight: 900;
     unicode-bidi: isolate;
 }
+.navbar-brand {
+        color: #F0EDE5;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #F0EDE5;
+}
 h1.page-title {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+}
+h1.page-title a {
+    color: #432E30;
+}
+h1.page-title a:hover {
+    color: #432E30;
 }
 h2 {
     color: #432E30;
@@ -136,6 +231,14 @@ p {
 }
 
 /* Tables ------------------------------------------ */
+tr.glossary-entry td,
+tr.glossary-entry {
+    font-weight: 400;
+}
+.ti.ti-menu-deep {
+    color: #FFFFFF;
+}
+
 .dataset-table-wrapper table.table.accordian:nth-child(n+2) thead {
     background-color: #D2E1F0;
 }
@@ -286,7 +389,14 @@ table.table-dataset:nth-of-type(2n+1) {
 }
 
 
-
+/* Color ------------------------- */
+.cyprus {
+    background-color: #004643 !important;
+    color: #FFFFFF !important;
+}
+.sand-dune {
+    background-color: #F0EDE5 !important;
+}
 
 
 /* Responsive ----------- */
