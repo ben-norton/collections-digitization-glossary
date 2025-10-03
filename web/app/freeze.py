@@ -13,12 +13,12 @@ import os
 cfg = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 
 current_dir = Path.cwd()
-build_dir = cfg + '/web/app/build'
+build_dir = cfg + '/docs'
 app = Flask(__name__, template_folder='templates')
 freezer = Freezer(app)
 
 
-#app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['FREEZER_DESTINATION'] = 'build'
 app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_RELATIVE_URLS_PRETTY'] = True
