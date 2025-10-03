@@ -1,0 +1,26 @@
+<!-- Sources TABLE -->
+    <div class="dataset-table-wrapper" id="sources">
+        <div class="table-responsive print-avoid">
+            <table class="table accordian table-compact table-terms table-bordered table-dataset">
+              <table id="sourcesTable" class="table accordian table-compact table-terms table-hover table-bordered table-dataset">
+                <thead>
+                  <tr>
+                    <th class="col-md-2">Title</th>
+                    <th class="col-md-1">Namespace</th>
+                    <th class="col-md-7">Description</th>
+                    <th class="col-md-2">URL</th>
+                  </tr>
+            </thead>
+            <tbody>
+              {% for k,v in sources.iterrows() %}
+                <tr class="sources-entry">
+                    <td>{{ v['title'] }}</td>
+                    <td>{{ v['namespace'] }}</td>
+                    <td>{{ v['description'] }}</td>
+                    <td class="cell-link"><a href="{{ v['url'] }}">{{ v['url'] }}</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+            </table>
+        </div>
+    </div>
