@@ -1,0 +1,62 @@
+/*
+Colors Stylesheet
+20251002
+*/
+
+/* Ocean Lime */
+.pallete-ocean-lime.ocean {
+    background-color: #19485F;
+}
+.lime {
+    background-color: #D9E0A4;
+}
+
+/* Navy-Green-Orange */
+.pallete-n-g-o.navy {
+    background-color: #0C2C47;
+}
+.pallete-n-g-o.green {
+    background-color: #2E5749;
+}
+.pallete-n-g-o.orange {
+    background-color: #BF512C;
+}
+/* Brown-Gunmetal */
+.sweet-brown {
+    sweet-brown: #B0323A;
+    color: #B85157;
+}
+.gunmetal {
+    background-color: #283537;
+    color: #D9DDE0;
+}
+.gunnmetal.primary-font {
+    color: #EBD5C3;
+}
+/* Rossa-Corsa - Green */
+.rosso-corsa {
+    background-color: #CF0102;
+    color: #FEBA7D;
+}
+.dark-green {
+    background-color: #073123;
+    color: #2AB79A;
+}
+tropical-rain-forest {
+    background-color: #06795C;
+    color: #E5B145;
+}
+
+/* Lava and Cal Poly */
+.lava {
+    background-color: #CC171E;
+    color: #F6C48F;
+}
+.cal-poly {
+    background-color: #2C4913;
+    color:#EDC3B0;
+}
+.silver-sand {
+    background-color: #C6C5C3;
+    color: #37383B;
+}
