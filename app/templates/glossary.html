@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}Glossary - Browse Terms{% endblock %}
+
+{% block content %}
+<div class="glossary-container">
+    <!-- Filter Panel -->
+    <aside class="filter-panel">
+        <h2>Filters</h2>
+        
+        <form method="GET" action="{{ url_for('index') }}" class="filter-form">
+            <!-- Search Box -->
+            <div class="filter-group">
+                <input type="text"
+                       id="search" 
+                       name="search" 
+                       placeholder="Search"
+                       value="{{ current_search }}">
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="">All Categories</option>
+                    {% for cat in all_categories %}
+                    <option value="{{ cat }}" {% if cat == current_category %}selected{% endif %}>
+                        {{ cat }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- PROV CLass Filter -->
+            <div class="filter-group">
+                <label for="prov_class">PROV Class</label>
+                <select id="prov_class" name="prov_class">
+                    <option value="">All PROV Classes</option>
+                    {% for pvc in all_prov_classes %}
+                    <option value="{{ pvc }}" {% if pvc == current_prov_class %}selected{% endif %}>
+                        {{ pvc }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- Sort By -->
+            <div class="filter-group">
+                <label for="sort_by">Sort By</label>
+                <select id="sort_by" name="sort_by">
+                    <option value="term" {% if current_sort == 'term' %}selected{% endif %}>Term (A-Z)</option>
+                    <option value="category" {% if current_sort == 'category' %}selected{% endif %}>Category</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="filter-buttons">
+                <button type="submit" class="btn-primary">Apply Filters</button>
+                <a href="{{ url_for('index') }}" class="btn-secondary">Clear All</a>
+            </div>
+        </form>
+
+        <!-- Active Filters Display -->
+        {% if current_search or current_category or current_prov_class %}
+        <div class="active-filters">
+            <h3>Active Filters:</h3>
+            <ul>
+                {% if current_search %}
+                <li>Search: <strong>{{ current_search }}</strong></li>
+                {% endif %}
+                {% if current_category %}
+                <li>Category: <strong>{{ current_category }}</strong></li>
+                {% endif %}
+                {% if current_prov_class %}
+                <li>PROV Class: <strong>{{ current_prov_class }}</strong></li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+    </aside>
+
+    <!-- Results Panel -->
+    <section class="results-panel">
+        <div class="results-header">
+            <h2>Terms</h2>
+            <span class="results-count">{{ total_count }} result{% if total_count != 1 %}s{% endif %}</span>
+        </div>
+
+        {% if terms %}
+        <div class="glossary-grid">
+            {% for term in terms %}
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="{{ url_for('term_detail', term_id=term.id) }}">{{ term.term }}</a>
+                    </h3>
+                    <span class="category-badge">{{ term.category }}</span>
+                </div>
+                
+                <p class="term-definition">{{ term.definition }}</p>
+
+                <div class="term-card-footer">
+                    <a href="{{ url_for('term_detail', term_id=term.id) }}" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-results">
+            <h3>No terms found</h3>
+            <p>Try adjusting your filters or search terms.</p>
+            <a href="{{ url_for('index') }}" class="btn-primary">View All Terms</a>
+        </div>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

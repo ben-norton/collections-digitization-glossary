@@ -1,106 +1,2459 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>GBIF Data Profiler | Interactive Profiles</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="A collection of interactive dataset profiles of GBIF Occurrence Datasets" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary - Browse Terms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.24.2/dist/bootstrap-table.min.css">
-    <link rel="stylesheet" href="static/custom/css/lux-bootstrap.css">
-      <link rel="stylesheet" href="static/custom/css/nav.css">
-    <link rel="stylesheet" href="static/custom/css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/original.css">
+    <link rel="stylesheet" href="static/sandstone-bootstrap.css">
+    <link rel="stylesheet" href="static/style.css">
+
 </head>
-<body id="page-top" >
-        <nav class="navbar  navbar-expand-lg  cyprus">
-        <!-- bg-body-tertiary -->
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">Collections Digitization Glossary</a>
-        </div>
-    </nav>
-    <div class="wrapper container-fluid">
-        <div class="row">
-            <div class="col-md-2 sidebar-col" id="main-sidebar">
-                    <aside class="sidebar sidebar-expanded" id="sidebar">
-    <ul class="sidebar-nav list-group">
-        <li class="nav-btn list-group-item list-group-item-action"><a href="index.html">Home</a></li>
-        <li class="nav-btn list-group-item list-group-item-action"><a href="glossary/index.html">Glossary</a></li>
-    </ul>
-</aside>
-            </div>
-            <main class="main main-content col-md-10">
-                
- <div class="row">
-    <div class="col">
-        <section class="doc-section">
-             <h2>Specimen Digitization Glossary</h2>
-
-<p>This website contains a comprehensive glossary of terms and associated resources in the museum collections digitization domain, with a focus on digitization workflows.
-The contents were last updated in 2025-10-03.</p>
-
-<h2>Source Data</h2>
-
-<p>78 sources are cited in this work. Most of those listed were used to define the 138 terms, but not all. 
-Accordingly, the sources table should be considered an additional resource in itself to be leverged when building KOS resources in the collections and related domains.<br />
-<a href="/glossary#sources">Click here</a> to view the sources table.</p>
-
-<h2>Contact</h2>
-
-<p>Designed and Developed by Ben Norton<br />
-<a href="mailto:michaelnorton.ben@gmail.com">michaelnorton.ben@gmail.com</a></p>
-
-<h2>Issues, Suggestions, and Critiques</h2>
-
-<p>Please submit any issues, suggestions, or critiques to the issue tracking the <a href="https://github.com/ben-norton/specimen-digitization-glossary/issues">GitHub repository</a>. </p>
-
-<h2>Stack</h2>
-
-<p>Python 3.12, Pandas, Python Flask, YData, and Sweetviz<br />
-Built using PyCharm Professional on Windows 11</p>
-
-        </section>
+<body>
+ <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-md-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Glossary
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="sources/index.html">Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about/index.html">About</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="https://github.com/ben-norton/specimen-digitization-glossary">GitHub</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+    <header class="main-header">
+        <div class="container">
+
+            <h1><a href="index.html">Collections Digitization Glossary</a></h1>
+            <p class="tagline">A defined term set in the domain of museum collections digitization</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+<div class="glossary-container">
+    <!-- Filter Panel -->
+    <aside class="filter-panel">
+        <h2>Filters</h2>
+        
+        <form method="GET" action="index.html" class="filter-form">
+            <!-- Search Box -->
+            <div class="filter-group">
+                <input type="text"
+                       id="search" 
+                       name="search" 
+                       placeholder="Search"
+                       value="">
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="">All Categories</option>
+                    
+                    <option value="Collectionds" >
+                        Collectionds
+                    </option>
+                    
+                    <option value="Collections" >
+                        Collections
+                    </option>
+                    
+                    <option value="Data" >
+                        Data
+                    </option>
+                    
+                    <option value="Global" >
+                        Global
+                    </option>
+                    
+                    <option value="Workflows" >
+                        Workflows
+                    </option>
+                    
+                </select>
+            </div>
+
+            <!-- PROV CLass Filter -->
+            <div class="filter-group">
+                <label for="prov_class">PROV Class</label>
+                <select id="prov_class" name="prov_class">
+                    <option value="">All PROV Classes</option>
+                    
+                    <option value="prov:Activity" >
+                        prov:Activity
+                    </option>
+                    
+                    <option value="prov:Entity" >
+                        prov:Entity
+                    </option>
+                    
+                    <option value="prov:Plan" >
+                        prov:Plan
+                    </option>
+                    
+                    <option value="prov:Role" >
+                        prov:Role
+                    </option>
+                    
+                </select>
+            </div>
+
+            <!-- Sort By -->
+            <div class="filter-group">
+                <label for="sort_by">Sort By</label>
+                <select id="sort_by" name="sort_by">
+                    <option value="term" selected>Term (A-Z)</option>
+                    <option value="category" >Category</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="filter-buttons">
+                <button type="submit" class="btn-primary">Apply Filters</button>
+                <a href="index.html" class="btn-secondary">Clear All</a>
+            </div>
+        </form>
+
+        <!-- Active Filters Display -->
+        
+    </aside>
+
+    <!-- Results Panel -->
+    <section class="results-panel">
+        <div class="results-header">
+            <h2>Terms</h2>
+            <span class="results-count">135 results</span>
+        </div>
+
+        
+        <div class="glossary-grid">
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/0/index.html">Accession Assessment</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">An activity with the goal of determining whether or not a specimen should be accessioned into a collection.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/0/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/1/index.html">Accessioning</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">The formal, documented process to legally add an object or group of objects to a museum collection. A single accession transaction occurs when one or more objects are acquired in the same manner, from one source, and at one time.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/1/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/2/index.html">Acquisition</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">An activity with the objective of gaining physical custory of an object for a museum collection through purchase, donation, bequest, transfer, or fieldwork. This includes the associated metdata primarily derived from primary sources.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/2/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/3/index.html">Action</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A semantically identifiable behavior of an entity or group of entities</p>
+
+                <div class="term-card-footer">
+                    <a href="term/3/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/4/index.html">Action Specification</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A specification composed of a sequence of instructions to achieve some objective.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/4/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/5/index.html">Activity</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An intentional action or a series of actions, performed by an agent, occurring over a period of time, and usually resulting in new entities.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/5/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/6/index.html">Activity</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">Activity is a kind of Event and specifically used to designate purposeful human activity.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/6/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/7/index.html">Agent</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&#39;s activity. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/7/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/8/index.html">Asset</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">An asset represents the conceptual content of a resource.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/8/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/9/index.html">Backlog</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Collection objects in the physical custody of a collection that have not completed the verbatim data capture or acqusition phase of a digitization project.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/9/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/10/index.html">Barcode</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Digital coding system showing an eye-visible linear array of rectangular marks of (possibly) varying width, height and vertical alignment, separated by spaces of (possibly) varying width in which the positioning and size of marks and spaces are used to code information to identify various types of material objects</p>
+
+                <div class="term-card-footer">
+                    <a href="term/10/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/11/index.html">Biological Object</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Individual items (physical objects) of a material nature, which live, have lived, or are natural products of or from living organisms.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/11/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/12/index.html">Branch</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A new instance of a workflow that splits from an existing workflow triggered by a planned activity such as acquiring a new collection object from an existing one (subsampling). The new workflow runs in parallel and is optionally reconnected for mobilization purposes.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/12/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/13/index.html">Catalog Record</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Written or electronic documentation that captures the unique identifying number assigned to a museum object or group of objects, along with a physical description, condition, provenience, and other pertinent information that facilitates physical and intellectual access.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/13/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/14/index.html">Collection</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Designates an accumulated group of objects with a focal characteristic that is assembled and maintained by an agent over time.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/14/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/15/index.html">Collection Management</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">All practices and procedures implemented by a museum in acquiring, documenting, handling, accessing, cataloguing, storing, securing, lending, conserving and disposing of collection objects</p>
+
+                <div class="term-card-footer">
+                    <a href="term/15/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/16/index.html">Collection Management System</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">An integrated software tool with a metadata structure specifically designed for capturing, curating, preserving, and accessing data associated with museum collections</p>
+
+                <div class="term-card-footer">
+                    <a href="term/16/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/17/index.html">Collection Object</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A physical or digital object that belongs to a museum collection</p>
+
+                <div class="term-card-footer">
+                    <a href="term/17/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/18/index.html">Collection Workflow</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A planed activity that defines role(s), procedures, task(s), and a specific structure in direct support of the care and digitization of museum collections</p>
+
+                <div class="term-card-footer">
+                    <a href="term/18/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/19/index.html">Concept Harmonization</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">Activity leading to the establishment of a correspondence between two or more closely related or overlapping concepts having in order to eliminate or reduce minor differences between them.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/19/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/20/index.html">Conservator</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Person who performs the operations necessary to maintain the integrity and value of material objects in an information and documentation organization</p>
+
+                <div class="term-card-footer">
+                    <a href="term/20/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/21/index.html">Curated Holding</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Comprises aggregations of physical objects that are curated and preserved by one or more Agents over time for a specific purpose and audience, and according to a particular collection development plan. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/21/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/22/index.html">Curator</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Person responsible for overseeing a collection with expertise in the same domain as the collection</p>
+
+                <div class="term-card-footer">
+                    <a href="term/22/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/23/index.html">Data Capture</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Deliberate action that results in the registration of a record into a record keeping system.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/23/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/24/index.html">Data Cleaning</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Refers to the step or series of steps for cleaning and curating data in a workflow. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/24/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/25/index.html">Data Collector</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Person/institution responsible for finding or gathering/collecting data</p>
+
+                <div class="term-card-footer">
+                    <a href="term/25/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/26/index.html">Data Curation</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A planned process in which existing data is collected, organized, and improved in preparation for subsequent use.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/26/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/28/index.html">Data Curation Workflow</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A type of workflow that includes active steps to curate data as an aid to on-going management of data through its lifecycle.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/28/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/27/index.html">Data Curation and Archival</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An activity that includes the preservation of data in a repository, archive, or a deposition database; and curation of data and metadata, database accessions, annotation, and data provenance with the goal of ensuring that data is findable and reusable. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/27/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/29/index.html">Data Curator</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Person tasked with reviewing, enhancing, cleaning, or standardizing metadata and the associated data submitted for storage, use, and maintenance within a centralized data store or repository</p>
+
+                <div class="term-card-footer">
+                    <a href="term/29/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/30/index.html">Data Entry</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The process by which original, source data is inputed by a human into a digital, structured format for later use and analysis.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/30/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/31/index.html">Data Governance</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The control of data entry and maintenance to ensure the data meets defined standards, qualities, or constraints.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/31/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/32/index.html">Data Integration</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Systematic combining of data from different independent and potentially heterogeneous sources, to create a more compatible, unified view of these data for research purposes</p>
+
+                <div class="term-card-footer">
+                    <a href="term/32/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/33/index.html">Data Lifecycle</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Entire period of time that data exists. This lifecycle describes the flow of data starting from planning, collecting, processing, analysing, preserving, sharing and finally reusing the data.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/33/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/34/index.html">Data Management Plan</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Statement describing how data will be managed throughout a specified life cycle including terms regarding archiving and potential preservation of the data in a data repository. The plan is considered to be a &#39;living&#39; document, i.e. one which can be updated when necessary.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/34/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/35/index.html">Data Manager</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A person primarily responsible for database creation, data collection, validation, integration, coding, review, quality evaluation, and archiving, as well as for preparation of reports and data displays.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/35/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/36/index.html">Data Migration</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The process of transporting data between computers, storage devices, or formats. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/36/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/37/index.html">Data Mobility</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The ability of information to be accessed and exchanged between systems</p>
+
+                <div class="term-card-footer">
+                    <a href="term/37/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/38/index.html">Data Policy</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Set of high-level principles that establish a guiding framework for data-related issues.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/38/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/39/index.html">Data Preparation</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Data preparation is the process of manipulating (or pre-processing) data (which may come from disparate data sources) to improve their quality or reduce bias in subsequent analysis.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/39/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/40/index.html">Data Product</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A collection of one or more data items that are packaged for or by a specific application.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/40/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/41/index.html">Data Product Specification</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Detailed description of a dataset or dataset series together with additional information that will enable it to be created, supplied to and used by another party</p>
+
+                <div class="term-card-footer">
+                    <a href="term/41/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/42/index.html">Data Profiling</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The statistical analysis and assessment of the quality of data values within a dataset for consistency, uniqueness and logic.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/42/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/43/index.html">Data Provider</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">An agent or agents that produces data or reference metadata</p>
+
+                <div class="term-card-footer">
+                    <a href="term/43/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/44/index.html">Data Publication Workflow</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Activities and processes in a digital environment that lead to the publication of data, associated metadata and accompanying documentation as a web-based resource.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/44/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/45/index.html">Data Publishing</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Process whereby data are subjected to an assessment process to determine whether they should be acquired by a repository; followed by a rigorous acquisition and ingest process that results in products being publicly made available and supported for the long-term by that repository.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/45/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/46/index.html">Data Quality</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The reliability and application efficiency of data.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/46/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/47/index.html">Data Steward</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Role within an organization responsible for ensuring metadata quality, integrity, and access in a manner that is consistent with policies and practices established through data governance to ensure the data is fit for reuse.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/47/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/48/index.html">Data Transformation</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A process whereby data is changed from one format or structure to another.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/48/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/49/index.html">Data Validation</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Process used to determine if data are inaccurate, incomplete, or unreasonable. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/49/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/50/index.html">Dataset</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">An identifiable collection of data</p>
+
+                <div class="term-card-footer">
+                    <a href="term/50/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/51/index.html">Deaccession</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">The formal, documented process by which a museum or institution permanently removes an object from its permanent collection. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/51/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/52/index.html">Derivation</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/52/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/53/index.html">Determination</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">The systematic identification and classification of a collection object</p>
+
+                <div class="term-card-footer">
+                    <a href="term/53/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/54/index.html">Digital Collections</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Designates an aggregation of digital objects, including digital versions of physical media, digitised resources, or born-digital items. The collection may be online presented or not.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/54/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/55/index.html">Digitization</a>
+                    </h3>
+                    <span class="category-badge">Collectionds</span>
+                </div>
+                
+                <p class="term-definition">Process of converting analogue materials into digital form</p>
+
+                <div class="term-card-footer">
+                    <a href="term/55/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/56/index.html">Distribution</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A specific serialized representation of a dataset.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/56/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/57/index.html">Distribution Phase</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">The stage in a project when a serialized version of a mobilized dataset is made available </p>
+
+                <div class="term-card-footer">
+                    <a href="term/57/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/58/index.html">Entity</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A physical, digital, conceptual, or other kind of thing with some a physical, digital, conceptual, or other kind of thing with some fixed aspects. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/58/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/59/index.html">Event</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Something that happens or occurs in time and space.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/59/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/60/index.html">Event</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">An arbitrary classification of a space/time region, by a cognitive agent. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/60/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/61/index.html">Event Type</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">Categorization scheme for grouping events by purpose</p>
+
+                <div class="term-card-footer">
+                    <a href="term/61/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/62/index.html">Extract, Transform Load</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A planned data integration process that extracts concretizations of information from a data source, prepares and transforms them, then loads the transformed concretizations into a target data store.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/62/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/63/index.html">FAIR Principles</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The FAIR principles are guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data. The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/63/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/64/index.html">Feature of Interest</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The thing being sampled or transformed in an act of sampling.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/64/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/65/index.html">Field</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">User-interface element in which data is entered or presented</p>
+
+                <div class="term-card-footer">
+                    <a href="term/65/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/66/index.html">Field Work</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Investigation or other type of formal activity practiced by direct observation in the field as a form of primary reconnaissance</p>
+
+                <div class="term-card-footer">
+                    <a href="term/66/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/67/index.html">Format Transformation</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A type of data transformation that preserves the content of a dataset while converting its representation format.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/67/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/68/index.html">Functional Specification</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A functional specification is a specification that describes the characteristics of an object.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/68/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/69/index.html">Generated</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The completion of production of a new entity by an activity. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/69/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/70/index.html">Geological Object</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">An amount of matter primarily (dominantly) having parts created by geologic processes. Can include minor parts that are not of geologic origin, such as organic material, and can be solid, fluid, or a mix.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/70/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/71/index.html">Identifier</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A word, number, letter, symbol, or any combination of these used to uniquely identify or reference an individual instance of an entity within a specific information domain.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/71/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/72/index.html">Identifier assignment</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An activity that results in the allocation of an identifier that may be locally or globally unique</p>
+
+                <div class="term-card-footer">
+                    <a href="term/72/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/73/index.html">Initator</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Something that sets into motion some course of events or causes something to happen.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/73/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/74/index.html">Iterative Workflow</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A workflow whose steps are the repetition of the same task type.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/74/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/75/index.html">Kind (of)</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A grouping of entities that share a common set of characteristics in a particular context.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/75/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/76/index.html">Loan</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">The temporary transfer of custody of museum property on either a short- term (three years or less) or long-term basis. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/76/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/77/index.html">Local Identifier</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Designates an assigned code that is uniquely and meaningfully defined only in the local source system or within the scope of an internal management system.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/77/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/78/index.html">Man-made Object</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/78/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/79/index.html">Material Entity</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">An entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/79/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/80/index.html">Material Sample</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A material entity that represents an entity of interest in whole or in part dwc:MaterialSample. Top concept in material sample object type hierarchy. Represents any material sample object.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/80/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/81/index.html">Metadata</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">Data that defines and describes other data</p>
+
+                <div class="term-card-footer">
+                    <a href="term/81/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/82/index.html">Mobilization</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">The process of preparing and transferring data from an internal resource or system to external networks for the purposes of distribution</p>
+
+                <div class="term-card-footer">
+                    <a href="term/82/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/83/index.html">Module</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A self-contained component (unit or item) that is used in combination with other components.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/83/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/84/index.html">Museum</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition"> An institution that cares for (conserves) a collection of artifacts and other objects of scientific, artistic, cultural, or historical importance.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/84/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/85/index.html">Museum Collection</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">An object aggregate that has as member parts a material sample that is located in a museum as a result of a process of curation.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/85/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/86/index.html">Online Collection</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A virtual collection primarily designed and collocated for online presentation. The items presented in an online collection may refer to physical objects or digital resources, or both.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/86/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/87/index.html">Organization</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">An organization is a social or legal institution such as a company, society, etc.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/87/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/88/index.html">Parallel Workflow</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A workflow with some tasks running concurrently.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/88/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/89/index.html">Phyiscal Object</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/89/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/90/index.html">Physical Collection</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Designates an aggregated group of tangible objects</p>
+
+                <div class="term-card-footer">
+                    <a href="term/90/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/91/index.html">Physical Object</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/91/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/92/index.html">Plan</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An entity that represents a set of intended actions or steps executed by one or more agents to achieve some goals.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/92/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/93/index.html">Plan specification</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/93/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/94/index.html">Planned process</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/94/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/95/index.html">Preparator</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Person carrying out the operations required for the conservation of dead animals for decoration purposes or for scientific study</p>
+
+                <div class="term-card-footer">
+                    <a href="term/95/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/96/index.html">Primary Source</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Materials that provide first-hand documentation or knowledge, usually of people, places, events or time periods.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/96/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/97/index.html">Procedure</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An intentional planned process performed by an agent within the context of a workflow</p>
+
+                <div class="term-card-footer">
+                    <a href="term/97/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/98/index.html">Procedure Specification</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A specification on the order, transitions and trigger of multiple action specifications that are part of some aggregate action specification.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/98/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/99/index.html">Process</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A coordinated (parallel and/or serial) sequence of tasks that are connected in order to achieve a common goal as part of a workflow</p>
+
+                <div class="term-card-footer">
+                    <a href="term/99/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/100/index.html">Process Protocol</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">A standard operating procedure (SOP) that is a collection of activities and the rules that describe when each activity is performed to achieve a specific purpose or objective(s).</p>
+
+                <div class="term-card-footer">
+                    <a href="term/100/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/101/index.html">Project</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">A temporary endeavor undertaken to achieve defined objectives</p>
+
+                <div class="term-card-footer">
+                    <a href="term/101/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/102/index.html">Project Phase</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A collection of logically-related project activities, usually culminating in the completion of an intended goal or devlierable</p>
+
+                <div class="term-card-footer">
+                    <a href="term/102/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/103/index.html">Property</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A variable that can be considered (as an investigated property) within a processing step</p>
+
+                <div class="term-card-footer">
+                    <a href="term/103/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/104/index.html">Provenance</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Information that documents the history of a described object and related described activities, and that contains information about the origin or source of the described object, any changes that can have taken place since it was originated, and who has had custody of it since it was originated
+</p>
+
+                <div class="term-card-footer">
+                    <a href="term/104/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/105/index.html">Provenance Statement</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/105/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/106/index.html">Quantity Kind</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">Any observable property that can be measured and quantified numerically. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/106/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/107/index.html">Registrar</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">Person responsible for the surveilling, handling and the action(s) of physical placement of material objects in a museum</p>
+
+                <div class="term-card-footer">
+                    <a href="term/107/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/108/index.html">Repository</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A Web-based resources that preserve, manage, and provide access to many types of digital materials in a variety of formats.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/108/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/109/index.html">Requirements</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A proposition that states a set of conditions that have to be fulfilled to achieve some specific objective.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/109/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/110/index.html">Research Data Publication Workflow</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Activities and processes in a digital environment that lead to the publication of research data, associated metadata and accompanying documentation and software code on the Web.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/110/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/111/index.html">Role</a>
+                    </h3>
+                    <span class="category-badge">Global</span>
+                </div>
+                
+                <p class="term-definition">The function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/111/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/112/index.html">Sample</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A material entity that represents a specific known entity (feature of interest)</p>
+
+                <div class="term-card-footer">
+                    <a href="term/112/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/113/index.html">Sample Collection Data Entry</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A planned process that involves the initial entering of data about sample collection into a database.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/113/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/114/index.html">Semantic Interoperability</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">The capability of different information systems to communicate information consistent with the intended meaning, which encompasses the data structure elements involved, the terminology appearing as data and the associated identifiers</p>
+
+                <div class="term-card-footer">
+                    <a href="term/114/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/115/index.html">Serial Workflow</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A workflow whose tasks are carried in a sequence defined in a planned process</p>
+
+                <div class="term-card-footer">
+                    <a href="term/115/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/116/index.html">Source Data Verification</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Confirming the accuracy, authenticity, and thoroughness of information by comparing it to original information and records.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/116/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/117/index.html">Specification</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A specification is a description of the essential technical attributes/requirements for an object or procedure, and may be used to determine that the object / procedure meets its requirements/attributes.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/117/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/118/index.html">Specimen</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A material entity that represents a generalized population or &#34;kind of&#34; something defined within some context.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/118/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/119/index.html">Step</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An atomic unit of a workflow plan that describes a specific task performed by an Agent</p>
+
+                <div class="term-card-footer">
+                    <a href="term/119/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/120/index.html">Subprocess</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A process that is included within another Process.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/120/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/121/index.html">Task</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An atomic unit of a task in a workflow procedure where one or more distinct, clearly defined actions are performed and may be characterized by a starting and ending time</p>
+
+                <div class="term-card-footer">
+                    <a href="term/121/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/122/index.html">Tool</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Physical or digital eesource that helps an agent perform an action</p>
+
+                <div class="term-card-footer">
+                    <a href="term/122/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/123/index.html">Transaction</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A cooperative interaction between two agents, involving the exchange or transfer of exchangeable products, services, rights, or funds or the processing of some request by one entity on behalf of the other</p>
+
+                <div class="term-card-footer">
+                    <a href="term/123/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/124/index.html">Transaction Identifier</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A global or local identifiers for a specific transaction</p>
+
+                <div class="term-card-footer">
+                    <a href="term/124/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/125/index.html">Trigger</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A specific event in a planned process that initializes a new workflow branch</p>
+
+                <div class="term-card-footer">
+                    <a href="term/125/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/126/index.html">Validation</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">A planned process with objective to check that the accuracy or the quality of a claim or prediction satisfies some criteria and which is assessed by comparing with independent results</p>
+
+                <div class="term-card-footer">
+                    <a href="term/126/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/127/index.html">Value</a>
+                    </h3>
+                    <span class="category-badge">Data</span>
+                </div>
+                
+                <p class="term-definition">An articulation that is by social convention understood to be potentially assignable to a variable</p>
+
+                <div class="term-card-footer">
+                    <a href="term/127/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/128/index.html">Voucher specimen</a>
+                    </h3>
+                    <span class="category-badge">Collections</span>
+                </div>
+                
+                <p class="term-definition">A specimen that physically and permanently documents data in  published literature by verifying the identity of the organism(s) used in the  study and by doing so ensures that a study which otherwise could not be  repeated can be accurately reviewed or reassessed. </p>
+
+                <div class="term-card-footer">
+                    <a href="term/128/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/129/index.html">Workflow</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A recorded sequence of connected steps, which may be automated, specifying a reliably repeatable sequence of operations to be undertaken during the lifecycle of data</p>
+
+                <div class="term-card-footer">
+                    <a href="term/129/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/130/index.html">Workflow Action</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">An Event with at least one participatory Agent that executes a Task that typically defined in a Plan as part of a Workflow</p>
+
+                <div class="term-card-footer">
+                    <a href="term/130/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/131/index.html">Workflow Event</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Something that “happens” during a process as part of a workflow and commonly affects the flow of the process.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/131/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/132/index.html">Workflow Management System</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A system that defines, creates and manages the execution of workflows through the use of software, running on one or more workflow engines, which is able to interpret the process definition, interact with workflow participants and, where required, invoke the use of IT tools and applications.</p>
+
+                <div class="term-card-footer">
+                    <a href="term/132/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/133/index.html">Workflow Phase</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">A distinguished part of a workflow comprised of a grouping of processes based on conceptual, thematic, functional and temporal criteria</p>
+
+                <div class="term-card-footer">
+                    <a href="term/133/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+            <article class="term-card">
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="term/134/index.html">Workflow Tool</a>
+                    </h3>
+                    <span class="category-badge">Workflows</span>
+                </div>
+                
+                <p class="term-definition">Device, system or software used by an Agent to perform specific workflow tasks</p>
+
+                <div class="term-card-footer">
+                    <a href="term/134/index.html" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            
+        </div>
+        
+    </section>
 </div>
 
-            </main>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Licensed Under CC-BY</p>
         </div>
-    </div>
-    <footer class="footer mt-auto py-3 bg-light">
-  <div class="container">
-
-  </div>
-</footer>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-    <script src="static/assets/plugins/bootstrap/js/bootstrap.bundle.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.24.2/dist/bootstrap-table.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.24.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
-<script type="text/javascript" src="static/custom/js/tableExport/tableExport.min.js"></script>.
-
-    <script>
-
-        $(document).ready(function() {
-            $('#glossaryTable').bootstrapTable({
-                sortable: true,
-                toolbarAlign: 'right',
-                rowStyle: 'table-row-style',
-                search:true,
-                showExport: true,
-                exportTypes: ['csv'],
-                buttonsClass: 'primary',
-    //             pageSize: 50,
-    //             advancedSearch: true,
-                 //            search: true,
-    //            pagination: true,
-
-            });
-
-		 //$('#glossaryTable').tableExport();
-    });
-    </script>
+    </footer>
 </body>
 </html>

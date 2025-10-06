@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Glossary Sources{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h2>Sources</h2>
+    </div>
+    <div class="sources-wrapper sources-grid">
+          {% for source in sources %}
+            <div class="source-grid-item">
+                <ul class="source">
+                  <li class="list-item-title">{{ source.title }}</li>
+                  <li>{{ source.description }}</li>
+                  <li>{{ source.url|urlize }}</li>
+                </ul>
+            </div>
+          {% endfor %}
+    </div>
+</div>
+{% endblock %}

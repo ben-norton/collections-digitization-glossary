@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Glossary{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='original.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sandstone-bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+ {% include 'includes/navbar.html' %}
+    <header class="main-header">
+        <div class="container">
+
+            <h1><a href="{{ url_for('index') }}">Collections Digitization Glossary</a></h1>
+            <p class="tagline">A defined term set in the domain of museum collections digitization</p>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Licensed Under CC-BY</p>
+        </div>
+    </footer>
+</body>
+</html>

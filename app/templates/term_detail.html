@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}{{ term.term }} - Glossary{% endblock %}
+
+{% block content %}
+<div class="term-detail-container">
+    <nav class="breadcrumb">
+        <a href="{{ url_for('index') }}">Back to Glossary</a>
+    </nav>
+
+    <article class="term-detail">
+        <header class="detail-header">
+            <h1>{{ term.term }}</h1>
+            <span class="category-badge large">{{ term.category }}</span>
+        </header>
+
+        <section class="detail-content">
+            <h3>Definition</h3>
+            <p class="definition-text">{{ term.definition }}</p>
+        </section>
+
+        <section class="details">
+            <ul class="term-details">
+                <li><span>PROV Class: </span>{{ term.prov_class }}</li>
+                {% if term.status is number %}
+                {% else %}
+                    <li><span>Status: </span>{{ term.status }}</li>
+                {% endif %}
+                {% if term.uri is number %}
+                {% else %}
+                    <li><span>Source URI: </span><a href="{{ term.uri }}">{{ term.uri }}</a></li>
+                {% endif %}
+                {% if term.source is number %}
+                {% else %}
+                    <li><span>Source: </span>{{ term.source }}</li>
+                {% endif %}
+            </ul>
+        </section>
+
+        <section class="detail-actions">
+            <a href="{{ url_for('index', category=term.category) }}" class="btn-secondary">
+                View all in {{ term.category }}
+            </a>
+            <a href="{{ url_for('index', prov_class=term.prov_class) }}" class="btn-secondary">
+                View all in {{ term.prov_class }}
+            </a>
+        </section>
+    </article>
+</div>
+{% endblock %}
