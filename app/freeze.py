@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 from flask_frozen import Freezer
 from markupsafe import Markup
+import numpy as np
 import markdown2
 import pandas as pd
 import yaml
@@ -57,7 +58,7 @@ def index():
     # Apply search filter
     if search:
         filtered_df = filtered_df[
-            filtered_df['term'].str.contains(search, case=False) |
+            filtered_df['label'].str.contains(search, case=False) |
             filtered_df['definition'].str.contains(search, case=False)
             ]
 
@@ -94,7 +95,8 @@ def index():
 
 @app.route('/term/<int:term_id>/')
 def term_detail(term_id):
-    term = df[df['id'] == term_id].to_dict(orient='records')
+    df_term = df.replace(np.nan, 'Empty')
+    term = df_term[df_term['id'] == term_id].to_dict(orient='records')
     if term:
         return render_template('term_detail.html', term=term[0])
     return "Term not found", 404
@@ -118,6 +120,7 @@ def about():
                            about_markdown=Markup(marked_text),
                            active_page='about',
                            slug='about')
+
 
 
 if __name__ == "__main__":

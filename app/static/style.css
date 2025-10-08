@@ -132,49 +132,108 @@ footer {
     margin-top: 4rem;
     text-align: center;
 }
-
-/* SOURCES ------------------------ */
+/* GLOSSARY ----------------------------------------- */
+.term-card {
+    position: relative;
+}
+.category-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.glossary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
 .sources-wrapper.sources-grid {
-        display: flex;
-        flex-wrap: wrap; /* Allows cards to wrap to the next line */
-        gap: 20px; /* Spacing between cards */
-        justify-content: space-around;
-    }
-    .source-grid-item {
-        flex: 1 1 500px; /* Allows cards to grow, shrink, and have a base width */
-        border: 1px solid #ccc;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    ul.source {
-        list-style-type: none;
-    }
-    ul.source .list-item-title {
-        font-weight:400;
-        font-size: 1.4rem;
-        font-family: 'Oswald', sans-serif;
-        padding-bottom: 10px;
-    }
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    gap: 20px; /* Spacing between cards */
+    justify-content: space-around;
+}
+.term-definition {
+    padding-bottom: 30px;
+}
+.term-card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    right:0;
 
-/* TERM DETAILS */
+}
+.filter-group select {
+    background: #FFFFFF;
+}
+.term-card-footer a.read-more {
+    padding: 10px 15px;
+    width: 100%;
+
+}
+.term-card-footer a.read-more:hover {
+    background: rgba(235,235,235,0.3);
+}
+/* SOURCES ------------------------ */
+
+.source-grid-item {
+    flex: 1 1 500px; /* Allows cards to grow, shrink, and have a base width */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+ul.source {
+    list-style-type: none;
+}
+ul.source .list-item-title {
+    font-weight:400;
+    font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px;
+}
+
+/* TERM DETAILS ---------------------------- */
+.term-detail {
+    background: white;
+    padding: 2rem;
+}
+section.detail-actions {
+    padding-top: 1rem;
+    height: auto;
+}
 .term-detail-container .detail-header {
     box-shadow: none;
     position: relative;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 0;
 }
 .term-detail-container .detail-header h1 {
     font-family: Oswald, sans-serif;
 }
-.category-badge {
-    position: absolute;
-    top: 0;
-    right: 10px;
+section.detail-actions .btn-secondary {
+    margin-right: 10px;
+    position:relative;
+    padding: 0.5rem 1rem;
+    display: inline-block;
 }
-
 .definition-text {
     font-size: 1rem;
 }
-
+ul.term-details {
+    list-style-type: none;
+    padding-left:0;
+}
+ul.term-details li {
+    display: block;
+    padding: 8px 4px;
+}
+ul.term-details li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+ul.term-details li span.title {
+    font-weight: 600;
+    display: inline-block;
+    width: 15%;
+}

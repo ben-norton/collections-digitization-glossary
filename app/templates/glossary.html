@@ -89,12 +89,13 @@
         {% if terms %}
         <div class="glossary-grid">
             {% for term in terms %}
-            <article class="term-card">
+            <article class="term-card glossary-grid-item">
+                <span class="category-badge">{{ term.category }}</span>
                 <div class="term-header">
                     <h3 class="term-title">
-                        <a href="{{ url_for('term_detail', term_id=term.id) }}">{{ term.term }}</a>
+                        <a href="{{ url_for('term_detail', term_id=term.id) }}">{{ term.label }}</a>
                     </h3>
-                    <span class="category-badge">{{ term.category }}</span>
+
                 </div>
                 
                 <p class="term-definition">{{ term.definition }}</p>
