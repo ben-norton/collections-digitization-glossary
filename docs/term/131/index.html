@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workflow Event - Glossary</title>
+    <title> - Glossary</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../static/original.css">
-    <link rel="stylesheet" href="../../static/sandstone-bootstrap.css">
-    <link rel="stylesheet" href="../../static/style.css">
+    <link rel="stylesheet" href="../../static/css/original.css">
+    <link rel="stylesheet" href="../../static/css/sandstone-bootstrap.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
 
 </head>
 <body>
  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="#" class="navbar-brand"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar"
+              aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ms-md-auto">
           <li class="nav-item">
             <a class="nav-link " href="../../index.html">Glossary
@@ -40,7 +42,6 @@
   </nav>
     <header class="main-header">
         <div class="container">
-
             <h1><a href="../../index.html">Collections Digitization Glossary</a></h1>
             <p class="tagline">A defined term set in the domain of museum collections digitization</p>
         </div>
@@ -56,25 +57,26 @@
     <article class="term-detail">
         <header class="detail-header">
             <h1>Workflow Event</h1>
-            <span class="category-badge large">Workflows</span>
         </header>
-
         <section class="detail-content">
             <h3>Definition</h3>
-            <p class="definition-text">Something that “happens” during a process as part of a workflow and commonly affects the flow of the process.</p>
+            <p class="definition-text text-block">Something that “happens” during a process as part of a workflow and commonly affects the flow of the process.</p>
+            
+                <h4>Usage Note</h4>
+                <p class="usage-notes text-block">Here event is generalized to cover many things in a process, including the start or end of an Activity or a change in state of a specimen</p>
+            
+
         </section>
 
         <section class="details">
             <ul class="term-details">
-                <li><span>PROV Class: </span>prov:Activity</li>
+                <li><span class="title">PROV Class:</span><span class="value">prov:Activity</span></li>
+                <li><span class="title">Status:</span><span class="value">Approved</span></li>
+
                 
-                    <li><span>Status: </span></li>
-                
-                
-                
-                
-                    <li><span>Source: </span>Adopted from https://www.irit.fr/recherches/MELODI/ontologies/BBO#Event</li>
-                
+
+                <li><span class="title">Source:</span><span class="value">Adopted from https://www.irit.fr/recherches/MELODI/ontologies/BBO#Event</span></li>
+                <li><span class="title">Category:</span><span class="value">Workflows</span></li>
             </ul>
         </section>
 
@@ -96,5 +98,6 @@
             <p>Licensed Under CC-BY</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -237,3 +237,14 @@ ul.term-details li span.title {
     display: inline-block;
     width: 15%;
 }
+
+
+@media (max-width: 480px) {
+    ul.term-details li span.title {
+        display: block;
+        width: 100%;
+    }
+    header.main-header {
+        padding: 1rem 0;
+    }
+}

@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request
 from flask_frozen import Freezer
 from markupsafe import Markup

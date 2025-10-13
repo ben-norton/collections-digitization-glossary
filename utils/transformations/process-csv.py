@@ -5,8 +5,8 @@ import datetime
 import globals as cfg
 
 
-source_glossary_filename = 'digitization-glossary-20251006.csv'
-source_sources_filename = 'digitization-glossary-sources-20251006.csv'
+source_glossary_filename = 'digitization-glossary-20251013.csv'
+source_sources_filename = 'digitization-glossary-sources-20251013.csv'
 
 today = datetime.date.today()
 ts = today.strftime("%Y%m%d")

@@ -11,7 +11,6 @@
     <article class="term-detail">
         <header class="detail-header">
             <h1>{{ term.label }}</h1>
-            <span class="category-badge large">{{ term.category }}</span>
         </header>
         <section class="detail-content">
             <h3>Definition</h3>
@@ -32,8 +31,8 @@
                     <li><span class="title">Source URI:</span><span class="value"><a href="{{ term.uri }}">{{ term.uri }}</a></span></li>
                 {% endif %}
 
-                    <li><span class="title">Source:</span><span class="value">{{ term.source }}</span></li>
-
+                <li><span class="title">Source:</span><span class="value">{{ term.source }}</span></li>
+                <li><span class="title">Category:</span><span class="value">{{ term.category }}</span></li>
             </ul>
         </section>
 
