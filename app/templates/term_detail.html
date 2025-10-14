@@ -30,8 +30,11 @@
                 {% if term.uri != 'Empty' %}
                     <li><span class="title">Source URI:</span><span class="value"><a href="{{ term.uri }}">{{ term.uri }}</a></span></li>
                 {% endif %}
-
+                {% if term.source != 'Empty' %}
                 <li><span class="title">Source:</span><span class="value">{{ term.source }}</span></li>
+            {% endif %}
+
+
                 <li><span class="title">Category:</span><span class="value">{{ term.category }}</span></li>
             </ul>
         </section>

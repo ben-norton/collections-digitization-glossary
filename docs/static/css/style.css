@@ -141,10 +141,14 @@ footer {
     top: 10px;
     right: 10px;
 }
-.glossary-grid {
+.glossary-container .results-panel .glossary-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+/*
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+
+ */
 }
 .sources-wrapper.sources-grid {
     display: flex;
@@ -192,6 +196,10 @@ ul.source .list-item-title {
     font-family: 'Oswald', sans-serif;
     padding-bottom: 10px;
 }
+.source-grid-item ul.source {
+    padding-left: 0;
+}
+
 
 /* TERM DETAILS ---------------------------- */
 .term-detail {
@@ -238,8 +246,24 @@ ul.term-details li span.title {
     width: 15%;
 }
 
+/* No Filters Panel */
 
+
+@media (max-width: 768px) {
+    .glossary-container .results-panel .glossary-grid {
+        grid-template-columns: 1fr;
+    }
+    ul.term-details li span.title {
+        width: 25%;
+    }
+     .results-panel {
+        padding: 1.5rem;
+    }
+}
 @media (max-width: 480px) {
+    .results-panel {
+        padding: 1rem;
+    }
     ul.term-details li span.title {
         display: block;
         width: 100%;

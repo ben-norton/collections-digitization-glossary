@@ -49,90 +49,8 @@
 
     <main class="container">
         
-<div class="glossary-container">
+<div class="glossary-container container">
     <!-- Filter Panel -->
-    <aside class="filter-panel">
-        <h2>Filters</h2>
-        
-        <form method="GET" action="index.html" class="filter-form">
-            <!-- Search Box -->
-            <div class="filter-group">
-                <input type="text"
-                       id="search" 
-                       name="search" 
-                       placeholder="Search"
-                       value="">
-            </div>
-
-            <!-- Category Filter -->
-            <div class="filter-group">
-                <label for="category">Category</label>
-                <select id="category" name="category">
-                    <option value="">All Categories</option>
-                    
-                    <option value="Collections" >
-                        Collections
-                    </option>
-                    
-                    <option value="Data" >
-                        Data
-                    </option>
-                    
-                    <option value="Global" >
-                        Global
-                    </option>
-                    
-                    <option value="Workflows" >
-                        Workflows
-                    </option>
-                    
-                </select>
-            </div>
-
-            <!-- PROV CLass Filter -->
-            <div class="filter-group">
-                <label for="prov_class">PROV Class</label>
-                <select id="prov_class" name="prov_class">
-                    <option value="">All PROV Classes</option>
-                    
-                    <option value="prov:Activity" >
-                        prov:Activity
-                    </option>
-                    
-                    <option value="prov:Entity" >
-                        prov:Entity
-                    </option>
-                    
-                    <option value="prov:Plan" >
-                        prov:Plan
-                    </option>
-                    
-                    <option value="prov:Role" >
-                        prov:Role
-                    </option>
-                    
-                </select>
-            </div>
-
-            <!-- Sort By -->
-            <div class="filter-group">
-                <label for="sort_by">Sort By</label>
-                <select id="sort_by" name="sort_by">
-                    <option value="term" selected>Term (A-Z)</option>
-                    <option value="category" >Category</option>
-                </select>
-            </div>
-
-            <!-- Buttons -->
-            <div class="filter-buttons">
-                <button type="submit" class="btn-primary">Apply Filters</button>
-                <a href="index.html" class="btn-secondary">Clear All</a>
-            </div>
-        </form>
-
-        <!-- Active Filters Display -->
-        
-    </aside>
 
     <!-- Results Panel -->
     <section class="results-panel">
@@ -145,7 +63,6 @@
         <div class="glossary-grid">
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/0/index.html">Accession Assessment</a>
@@ -159,11 +76,11 @@
                     <a href="term/0/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/1/index.html">Accessioning</a>
@@ -177,11 +94,11 @@
                     <a href="term/1/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/2/index.html">Acquisition</a>
@@ -195,11 +112,11 @@
                     <a href="term/2/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/3/index.html">Action</a>
@@ -213,11 +130,11 @@
                     <a href="term/3/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/4/index.html">Action Specification</a>
@@ -231,11 +148,11 @@
                     <a href="term/4/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/5/index.html">Activity</a>
@@ -249,11 +166,11 @@
                     <a href="term/5/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/6/index.html">Activity</a>
@@ -267,11 +184,11 @@
                     <a href="term/6/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/7/index.html">Agent</a>
@@ -285,11 +202,11 @@
                     <a href="term/7/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/8/index.html">Asset</a>
@@ -303,11 +220,11 @@
                     <a href="term/8/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/9/index.html">Backlog</a>
@@ -321,11 +238,11 @@
                     <a href="term/9/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/10/index.html">Barcode</a>
@@ -339,11 +256,11 @@
                     <a href="term/10/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/11/index.html">Biological Object</a>
@@ -357,11 +274,11 @@
                     <a href="term/11/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/12/index.html">Branch</a>
@@ -375,11 +292,11 @@
                     <a href="term/12/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/13/index.html">Catalog Record</a>
@@ -393,11 +310,11 @@
                     <a href="term/13/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/14/index.html">Collection</a>
@@ -411,11 +328,11 @@
                     <a href="term/14/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/15/index.html">Collection Management</a>
@@ -429,11 +346,11 @@
                     <a href="term/15/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/16/index.html">Collection Management System</a>
@@ -447,11 +364,11 @@
                     <a href="term/16/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/17/index.html">Collection Object</a>
@@ -465,11 +382,11 @@
                     <a href="term/17/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/18/index.html">Collection Workflow</a>
@@ -483,11 +400,11 @@
                     <a href="term/18/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/19/index.html">Concept Harmonization</a>
@@ -501,11 +418,11 @@
                     <a href="term/19/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/20/index.html">Conservator</a>
@@ -519,11 +436,11 @@
                     <a href="term/20/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/21/index.html">Curated Holding</a>
@@ -537,11 +454,11 @@
                     <a href="term/21/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/22/index.html">Curator</a>
@@ -555,11 +472,11 @@
                     <a href="term/22/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/23/index.html">Data Capture</a>
@@ -573,11 +490,11 @@
                     <a href="term/23/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/24/index.html">Data Cleaning</a>
@@ -591,11 +508,11 @@
                     <a href="term/24/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/25/index.html">Data Collector</a>
@@ -609,11 +526,11 @@
                     <a href="term/25/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/26/index.html">Data Curation</a>
@@ -627,11 +544,11 @@
                     <a href="term/26/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/27/index.html">Data Curation and Archival</a>
@@ -645,11 +562,11 @@
                     <a href="term/27/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/28/index.html">Data Curation Workflow</a>
@@ -663,11 +580,11 @@
                     <a href="term/28/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/29/index.html">Data Curator</a>
@@ -681,11 +598,11 @@
                     <a href="term/29/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/30/index.html">Data Entry</a>
@@ -699,11 +616,11 @@
                     <a href="term/30/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/31/index.html">Data Governance</a>
@@ -717,11 +634,11 @@
                     <a href="term/31/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/32/index.html">Data Integration</a>
@@ -735,11 +652,11 @@
                     <a href="term/32/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/33/index.html">Data Lifecycle</a>
@@ -753,11 +670,11 @@
                     <a href="term/33/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/34/index.html">Data Management Plan</a>
@@ -771,11 +688,11 @@
                     <a href="term/34/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/35/index.html">Data Manager</a>
@@ -789,11 +706,11 @@
                     <a href="term/35/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/36/index.html">Data Migration</a>
@@ -807,11 +724,11 @@
                     <a href="term/36/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/37/index.html">Data Mobility</a>
@@ -825,11 +742,11 @@
                     <a href="term/37/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/38/index.html">Data Policy</a>
@@ -843,11 +760,11 @@
                     <a href="term/38/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/39/index.html">Data Preparation</a>
@@ -861,11 +778,11 @@
                     <a href="term/39/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/40/index.html">Data Product</a>
@@ -879,11 +796,11 @@
                     <a href="term/40/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/41/index.html">Data Product Specification</a>
@@ -897,11 +814,11 @@
                     <a href="term/41/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/42/index.html">Data Profiling</a>
@@ -915,11 +832,11 @@
                     <a href="term/42/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/43/index.html">Data Provider</a>
@@ -933,11 +850,11 @@
                     <a href="term/43/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/44/index.html">Data Publication Workflow</a>
@@ -951,11 +868,11 @@
                     <a href="term/44/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/45/index.html">Data Publishing</a>
@@ -969,11 +886,11 @@
                     <a href="term/45/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/46/index.html">Data Quality</a>
@@ -987,11 +904,11 @@
                     <a href="term/46/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/47/index.html">Data Steward</a>
@@ -1005,11 +922,11 @@
                     <a href="term/47/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/48/index.html">Data Transformation</a>
@@ -1023,11 +940,11 @@
                     <a href="term/48/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/49/index.html">Data Validation</a>
@@ -1041,11 +958,11 @@
                     <a href="term/49/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/50/index.html">Dataset</a>
@@ -1059,11 +976,11 @@
                     <a href="term/50/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/51/index.html">Deaccession</a>
@@ -1077,11 +994,11 @@
                     <a href="term/51/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/52/index.html">Derivation</a>
@@ -1095,11 +1012,11 @@
                     <a href="term/52/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/53/index.html">Determination</a>
@@ -1113,11 +1030,11 @@
                     <a href="term/53/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/54/index.html">Digital Collections</a>
@@ -1131,11 +1048,11 @@
                     <a href="term/54/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/55/index.html">Digitization</a>
@@ -1149,11 +1066,11 @@
                     <a href="term/55/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/56/index.html">Distribution</a>
@@ -1167,11 +1084,11 @@
                     <a href="term/56/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/57/index.html">Distribution Phase</a>
@@ -1185,11 +1102,11 @@
                     <a href="term/57/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/58/index.html">Entity</a>
@@ -1203,11 +1120,11 @@
                     <a href="term/58/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/59/index.html">Event</a>
@@ -1221,11 +1138,11 @@
                     <a href="term/59/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/60/index.html">Event</a>
@@ -1239,11 +1156,11 @@
                     <a href="term/60/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/61/index.html">Event Type</a>
@@ -1257,11 +1174,11 @@
                     <a href="term/61/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/62/index.html">Extract, Transform Load</a>
@@ -1275,11 +1192,11 @@
                     <a href="term/62/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/63/index.html">FAIR Principles</a>
@@ -1293,11 +1210,11 @@
                     <a href="term/63/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/64/index.html">Feature of Interest</a>
@@ -1311,11 +1228,11 @@
                     <a href="term/64/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/65/index.html">Field</a>
@@ -1329,11 +1246,11 @@
                     <a href="term/65/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/66/index.html">Field Work</a>
@@ -1347,11 +1264,11 @@
                     <a href="term/66/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/67/index.html">Format Transformation</a>
@@ -1365,11 +1282,11 @@
                     <a href="term/67/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/68/index.html">Functional Specification</a>
@@ -1383,11 +1300,11 @@
                     <a href="term/68/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/69/index.html">Generated</a>
@@ -1401,11 +1318,11 @@
                     <a href="term/69/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/70/index.html">Geological Object</a>
@@ -1419,11 +1336,11 @@
                     <a href="term/70/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/71/index.html">Identifier</a>
@@ -1437,11 +1354,11 @@
                     <a href="term/71/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/72/index.html">Identifier assignment</a>
@@ -1455,11 +1372,11 @@
                     <a href="term/72/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/73/index.html">Initator</a>
@@ -1473,11 +1390,11 @@
                     <a href="term/73/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/74/index.html">Iterative Workflow</a>
@@ -1491,11 +1408,11 @@
                     <a href="term/74/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/75/index.html">Kind (of)</a>
@@ -1509,11 +1426,11 @@
                     <a href="term/75/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/76/index.html">Loan</a>
@@ -1527,11 +1444,11 @@
                     <a href="term/76/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/77/index.html">Local Identifier</a>
@@ -1545,11 +1462,11 @@
                     <a href="term/77/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/78/index.html">Man-made Object</a>
@@ -1563,11 +1480,11 @@
                     <a href="term/78/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/79/index.html">Material Entity</a>
@@ -1581,11 +1498,11 @@
                     <a href="term/79/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/80/index.html">Material Sample</a>
@@ -1599,11 +1516,11 @@
                     <a href="term/80/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/81/index.html">Metadata</a>
@@ -1617,11 +1534,11 @@
                     <a href="term/81/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/82/index.html">Mobilization</a>
@@ -1635,11 +1552,11 @@
                     <a href="term/82/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/83/index.html">Module</a>
@@ -1653,11 +1570,11 @@
                     <a href="term/83/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/84/index.html">Museum</a>
@@ -1671,11 +1588,11 @@
                     <a href="term/84/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/85/index.html">Museum Collection</a>
@@ -1689,11 +1606,11 @@
                     <a href="term/85/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/86/index.html">Online Collection</a>
@@ -1707,11 +1624,11 @@
                     <a href="term/86/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/87/index.html">Organization</a>
@@ -1725,11 +1642,11 @@
                     <a href="term/87/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/88/index.html">Parallel Workflow</a>
@@ -1743,11 +1660,11 @@
                     <a href="term/88/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/89/index.html">Phyiscal Object</a>
@@ -1761,11 +1678,11 @@
                     <a href="term/89/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/90/index.html">Physical Collection</a>
@@ -1779,11 +1696,11 @@
                     <a href="term/90/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/91/index.html">Physical Object</a>
@@ -1797,11 +1714,11 @@
                     <a href="term/91/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/92/index.html">Plan</a>
@@ -1815,11 +1732,11 @@
                     <a href="term/92/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/93/index.html">Plan specification</a>
@@ -1833,11 +1750,11 @@
                     <a href="term/93/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/94/index.html">Planned process</a>
@@ -1851,11 +1768,11 @@
                     <a href="term/94/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/95/index.html">Preparator</a>
@@ -1869,11 +1786,11 @@
                     <a href="term/95/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/96/index.html">Primary Source</a>
@@ -1887,11 +1804,11 @@
                     <a href="term/96/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/97/index.html">Procedure</a>
@@ -1905,11 +1822,11 @@
                     <a href="term/97/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/98/index.html">Procedure Specification</a>
@@ -1923,11 +1840,11 @@
                     <a href="term/98/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/99/index.html">Process</a>
@@ -1941,11 +1858,11 @@
                     <a href="term/99/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/100/index.html">Process Protocol</a>
@@ -1959,11 +1876,11 @@
                     <a href="term/100/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/101/index.html">Project</a>
@@ -1977,11 +1894,11 @@
                     <a href="term/101/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/102/index.html">Project Phase</a>
@@ -1995,11 +1912,11 @@
                     <a href="term/102/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/103/index.html">Property</a>
@@ -2013,11 +1930,11 @@
                     <a href="term/103/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/104/index.html">Provenance</a>
@@ -2032,11 +1949,11 @@
                     <a href="term/104/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/105/index.html">Provenance Statement</a>
@@ -2050,11 +1967,11 @@
                     <a href="term/105/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/106/index.html">Quantity Kind</a>
@@ -2068,11 +1985,11 @@
                     <a href="term/106/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/107/index.html">Registrar</a>
@@ -2086,11 +2003,11 @@
                     <a href="term/107/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/108/index.html">Repository</a>
@@ -2104,11 +2021,11 @@
                     <a href="term/108/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/109/index.html">Requirements</a>
@@ -2122,11 +2039,11 @@
                     <a href="term/109/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/110/index.html">Research Data Publication Workflow</a>
@@ -2140,11 +2057,11 @@
                     <a href="term/110/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Global</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/111/index.html">Role</a>
@@ -2158,11 +2075,11 @@
                     <a href="term/111/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Global</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/112/index.html">Sample</a>
@@ -2176,11 +2093,11 @@
                     <a href="term/112/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/113/index.html">Sample Collection Data Entry</a>
@@ -2194,11 +2111,11 @@
                     <a href="term/113/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/114/index.html">Semantic Interoperability</a>
@@ -2212,11 +2129,11 @@
                     <a href="term/114/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/115/index.html">Serial Workflow</a>
@@ -2230,11 +2147,11 @@
                     <a href="term/115/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/116/index.html">Source Data Verification</a>
@@ -2248,11 +2165,11 @@
                     <a href="term/116/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/117/index.html">Specification</a>
@@ -2266,11 +2183,11 @@
                     <a href="term/117/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/118/index.html">Specimen</a>
@@ -2284,11 +2201,11 @@
                     <a href="term/118/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/119/index.html">Step</a>
@@ -2302,11 +2219,11 @@
                     <a href="term/119/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/120/index.html">Subprocess</a>
@@ -2320,11 +2237,11 @@
                     <a href="term/120/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/121/index.html">Task</a>
@@ -2338,11 +2255,11 @@
                     <a href="term/121/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/122/index.html">Tool</a>
@@ -2356,11 +2273,11 @@
                     <a href="term/122/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/123/index.html">Transaction</a>
@@ -2374,11 +2291,11 @@
                     <a href="term/123/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/124/index.html">Transaction Identifier</a>
@@ -2392,11 +2309,11 @@
                     <a href="term/124/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/125/index.html">Trigger</a>
@@ -2410,11 +2327,11 @@
                     <a href="term/125/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/126/index.html">Validation</a>
@@ -2428,11 +2345,11 @@
                     <a href="term/126/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Data</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/127/index.html">Value</a>
@@ -2446,11 +2363,11 @@
                     <a href="term/127/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Data</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Collections</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/128/index.html">Voucher specimen</a>
@@ -2464,11 +2381,11 @@
                     <a href="term/128/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Collections</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/129/index.html">Workflow</a>
@@ -2482,11 +2399,11 @@
                     <a href="term/129/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/130/index.html">Workflow Action</a>
@@ -2500,11 +2417,11 @@
                     <a href="term/130/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/131/index.html">Workflow Event</a>
@@ -2518,11 +2435,11 @@
                     <a href="term/131/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/132/index.html">Workflow Management System</a>
@@ -2536,11 +2453,11 @@
                     <a href="term/132/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/133/index.html">Workflow Phase</a>
@@ -2554,11 +2471,11 @@
                     <a href="term/133/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
             <article class="term-card glossary-grid-item">
-                <span class="category-badge">Workflows</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="term/134/index.html">Workflow Tool</a>
@@ -2572,6 +2489,7 @@
                     <a href="term/134/index.html" class="read-more">
                         View Details
                     </a>
+                     <span class="category-badge float-end">Workflows</span>
                 </div>
             </article>
             
@@ -2587,6 +2505,8 @@
             <p>Licensed Under CC-BY</p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
