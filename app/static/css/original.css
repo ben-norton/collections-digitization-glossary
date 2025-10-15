@@ -47,14 +47,14 @@ main {
 }
 
 /* Glossary Container */
-/* With Filters Panel
+
 .glossary-container {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 2rem;
     align-items: start;
 }
-*/
+
 /* Filter Panel */
 .filter-panel {
     background: white;

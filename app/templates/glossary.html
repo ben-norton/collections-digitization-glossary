@@ -3,9 +3,9 @@
 {% block title %}Glossary - Browse Terms{% endblock %}
 
 {% block content %}
-<div class="glossary-container container">
+<div class="glossary-container">
     <!-- Filter Panel -->
-
+    {% include 'includes/filters-panel.html' %}
     <!-- Results Panel -->
     <section class="results-panel">
         <div class="results-header">
@@ -16,7 +16,8 @@
         {% if terms %}
         <div class="glossary-grid">
             {% for term in terms %}
-            <article class="term-card glossary-grid-item">
+            <article class="term-card">
+                <span class="category-badge">{{ term.category }}</span>
                 <div class="term-header">
                     <h3 class="term-title">
                         <a href="{{ url_for('term_detail', term_id=term.id) }}">{{ term.label }}</a>
@@ -30,7 +31,6 @@
                     <a href="{{ url_for('term_detail', term_id=term.id) }}" class="read-more">
                         View Details
                     </a>
-                     <span class="category-badge float-end">{{ term.category }}</span>
                 </div>
             </article>
             {% endfor %}

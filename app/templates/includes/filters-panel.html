@@ -1,9 +1,12 @@
- <aside class="filter-panel">
+
+    <!-- Filter Panel -->
+    <aside class="filter-panel">
         <h2>Filters</h2>
 
         <form method="GET" action="{{ url_for('index') }}" class="filter-form">
             <!-- Search Box -->
             <div class="filter-group">
+                <label for="search">Search Terms</label>
                 <input type="text"
                        id="search"
                        name="search"
@@ -24,19 +27,6 @@
                 </select>
             </div>
 
-            <!-- PROV CLass Filter -->
-            <div class="filter-group">
-                <label for="prov_class">PROV Class</label>
-                <select id="prov_class" name="prov_class">
-                    <option value="">All PROV Classes</option>
-                    {% for pvc in all_prov_classes %}
-                    <option value="{{ pvc }}" {% if pvc == current_prov_class %}selected{% endif %}>
-                        {{ pvc }}
-                    </option>
-                    {% endfor %}
-                </select>
-            </div>
-
             <!-- Sort By -->
             <div class="filter-group">
                 <label for="sort_by">Sort By</label>
@@ -52,9 +42,7 @@
                 <a href="{{ url_for('index') }}" class="btn-secondary">Clear All</a>
             </div>
         </form>
-
-        <!-- Active Filters Display -->
-        {% if current_search or current_category or current_prov_class %}
+    {% if current_search or current_category or current_tag %}
         <div class="active-filters">
             <h3>Active Filters:</h3>
             <ul>
@@ -64,10 +52,8 @@
                 {% if current_category %}
                 <li>Category: <strong>{{ current_category }}</strong></li>
                 {% endif %}
-                {% if current_prov_class %}
-                <li>PROV Class: <strong>{{ current_prov_class }}</strong></li>
-                {% endif %}
             </ul>
         </div>
         {% endif %}
+    </aside>
     </aside>

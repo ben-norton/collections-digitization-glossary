@@ -1,20 +1,11 @@
 from flask import Flask, render_template, request
-from flask_frozen import Freezer
 from markupsafe import Markup
 import markdown2
 import pandas as pd
 import yaml
-import os
 import sys
 
-build_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'build')
-app = Flask(__name__, template_folder='templates')
-freezer = Freezer(app)
-
-app.config['TEMPLATES_AUTO_RELOAD'] = True
-app.config['FREEZER_RELATIVE_URLS'] = True
-app.config['FREEZER_RELATIVE_URLS_PRETTY'] = True
-app.config['FREEZER_IGNORE_MIMETYPE_WARNINGS'] = True
+app = Flask(__name__)
 
 # Source Files
 glossary_csv = 'data/glossary-entries.csv'
@@ -47,7 +38,6 @@ def index():
     # Get filter parameters
     search = request.args.get('search', '').strip()
     category = request.args.get('category', '').strip()
-    prov_class = request.args.get('prov_class', '').strip()
     sort_by = request.args.get('sort_by', 'term')
 
     # Start with full glossary
@@ -56,7 +46,7 @@ def index():
     # Apply search filter
     if search:
         filtered_df = filtered_df[
-            filtered_df['term'].str.contains(search, case=False) |
+            filtered_df['label'].str.contains(search, case=False) |
             filtered_df['definition'].str.contains(search, case=False)
             ]
 
@@ -64,9 +54,6 @@ def index():
     if category:
         filtered_df = filtered_df[filtered_df['category'] == category]
 
-    # Apply tag filter
-    if prov_class:
-        filtered_df = filtered_df[filtered_df['prov_class'] == prov_class]
 
     # Sort results
     if sort_by in filtered_df.columns:
@@ -74,19 +61,17 @@ def index():
 
     # Convert to list of dictionaries
     terms = filtered_df.to_dict(orient='records')
+    print(terms)
 
     # Get all unique categories and tags for filters
     all_categories = sorted(df['category'].unique().tolist())
-    all_prov_classes = sorted(df['prov_class'].unique().tolist())
 #    all_tags = sorted(set([tag.strip() for tags in df['tags'] for tag in tags.split(',')]))
 
     return render_template('glossary.html',
                            terms=terms,
                            all_categories=all_categories,
-                           all_prov_classes=all_prov_classes,
                            current_search=search,
                            current_category=category,
-                           current_prov_class=prov_class,
                            current_sort=sort_by,
                            total_count=len(terms),
                             active_page='glossary')
@@ -120,11 +105,8 @@ def about():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "build":
-        freezer.freeze()
-        print("Written to: " + build_dir)
-    elif len(sys.argv) > 1 and sys.argv[1] == "test":
+    if len(sys.argv) > 1 and sys.argv[1] == "test":
         freezer.run(debug=True)
         print("Test run")
     else:
-        app.run(port=5000)
+        app.run(host='0.0.0.0')

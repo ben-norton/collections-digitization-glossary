@@ -88,15 +88,6 @@ ul.navbar-nav li a.nav-link {
     background: #004643;
     color: white;
 }
-.tag {
-    background: #f0f4ff;
-    color: #004643;
-}
-
-.tag:hover {
-    background: #004643;
-    color: white;
-}
 
 .read-more {
     color: #004643;
@@ -136,24 +127,17 @@ footer {
 .term-card {
     position: relative;
 }
+
 .category-badge {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
 }
-.glossary-container .results-panel .glossary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-/*
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
 
- */
-}
 .sources-wrapper.sources-grid {
     display: flex;
-    flex-wrap: wrap; /* Allows cards to wrap to the next line */
-    gap: 20px; /* Spacing between cards */
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-around;
 }
 .term-definition {
@@ -165,7 +149,6 @@ footer {
     width: 100%;
     margin: 0;
     right:0;
-
 }
 .filter-group select {
     background: #FFFFFF;
@@ -173,11 +156,25 @@ footer {
 .term-card-footer a.read-more {
     padding: 10px 15px;
     width: 100%;
-
 }
 .term-card-footer a.read-more:hover {
     background: rgba(235,235,235,0.3);
 }
+/* Filter Panel */
+.filter-panel {
+    border-radius: 0;
+}
+.filter-panel h2,
+.results-header h2 {
+    color: #003245;
+    font-family: Oswald, sans-serif;
+
+
+    font-size: 2rem;
+}
+
+
+
 /* SOURCES ------------------------ */
 
 .source-grid-item {
