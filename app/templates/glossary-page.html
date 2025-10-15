@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Glossary - Browse Terms{% endblock %}
+
+{% block content %}
+<div class="glossary-container full-width">
+    <!-- Results Panel -->
+    <section class="results-panel">
+        <div class="results-header">
+            <h2>Terms</h2>
+            <span class="results-count">{{ total_count }} result{% if total_count != 1 %}s{% endif %}</span>
+        </div>
+
+        {% if terms %}
+        <div class="glossary-grid">
+            {% for term in terms %}
+            <article class="term-card">
+                <span class="category-badge">{{ term.category }}</span>
+                <div class="term-header">
+                    <h3 class="term-title">
+                        <a href="{{ url_for('term_detail', term_id=term.id) }}">{{ term.label }}</a>
+                    </h3>
+
+                </div>
+                
+                <p class="term-definition">{{ term.definition }}</p>
+
+                <div class="term-card-footer">
+                    <a href="{{ url_for('term_detail', term_id=term.id) }}" class="read-more">
+                        View Details
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-results">
+            <h3>No terms found</h3>
+            <p>Try adjusting your filters or search terms.</p>
+            <a href="{{ url_for('index') }}" class="btn-primary">View All Terms</a>
+        </div>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

@@ -8,18 +8,21 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ms-md-auto">
           <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'glossary' else '' }}" href="{{ url_for('index') }}">Glossary
-              <span class="visually-hidden">(current)</span>
+            <a class="nav-link {{ 'active' if active_page == 'glossary' else '' }}" href="{{ url_for('index') }}">
+                <i class="ti ti-book"></i> Glossary
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'sources' else '' }}" href="{{ url_for('sources') }}">Sources</a>
+            <a class="nav-link {{ 'active' if active_page == 'sources' else '' }}" href="{{ url_for('sources') }}">
+                <i class="ti ti-notebook"></i>
+                Sources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="{{ url_for('about') }}">About</a>
+            <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="{{ url_for('about') }}">
+                <i class="ti ti-bulb"></i> About</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="https://github.com/ben-norton/specimen-digitization-glossary">GitHub</a>
+            <a class="nav-link" href="https://github.com/ben-norton/specimen-digitization-glossary"><i class="ti ti-brand-github"></i> GitHub</a>
           </li>
         </ul>
       </div>

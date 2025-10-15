@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}{{ term.term }} - Glossary{% endblock %}
+
+{% block content %}
+<div class="term-detail-container">
+    <nav class="breadcrumb">
+        <a href="{{ url_for('index') }}">Back to Glossary</a>
+    </nav>
+
+    <article class="term-detail">
+        <header class="detail-header">
+            <h1>{{ term.label }}</h1>
+        </header>
+        <section class="detail-content">
+            <h3>Definition</h3>
+            <p class="definition-text text-block">{{ term.definition }}</p>
+            {% if term.usage_note is defined and term.usage_note == term.usage_note %}
+                <h4>Usage Note</h4>
+                <p class="usage-notes text-block">{{ term.usage_note }}</p>
+            {%  endif %}
+
+        </section>
+
+        <section class="details">
+            <ul class="term-details">
+                <li><span class="title">PROV Class:</span><span class="value">{{ term.prov_class }}</span></li>
+                <li><span class="title">Status:</span><span class="value">{{ term.status }}</span></li>
+
+                {% if term.url is defined and term.url == term.url %}
+                    <li><span class="title">Source URI:</span><span class="value"><a href="{{ term.uri }}">{{ term.url }}</a></span></li>
+                {% endif %}
+                {% if term.source != 'Empty' %}
+                <li><span class="title">Source:</span><span class="value">{{ term.source }}</span></li>
+            {% endif %}
+
+
+                <li><span class="title">Category:</span><span class="value">{{ term.category }}</span></li>
+            </ul>
+        </section>
+    </article>
+</div>
+{% endblock %}

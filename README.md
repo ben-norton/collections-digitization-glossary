@@ -1,5 +1,6 @@
-# Museum Collections Digitization Glossary
-This repository and associated website contains a glossary of terms and associated resources in the museum collections digitization domain, with a focus on collections workflows.
+# Museum Collections Glossary
+This repository and associated website contains a glossary of terms and associated resources in the 
+museum collections domain, with a focus on digitization and workflows.
 
 ## Glossary Versions
 The current version of the glossary is published here: https://ben-norton.github.io/specimen-digitization-glossary/

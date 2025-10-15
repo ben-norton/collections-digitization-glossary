@@ -25,6 +25,7 @@ header.main-header {
 }
 ul.navbar-nav li a.nav-link {
     line-height: 14px;
+    font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
 /* COLOR REPLACEMENTS */
@@ -124,16 +125,15 @@ footer {
     text-align: center;
 }
 /* GLOSSARY ----------------------------------------- */
+
 .term-card {
     position: relative;
 }
-
 .category-badge {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
-
 .sources-wrapper.sources-grid {
     display: flex;
     flex-wrap: wrap;
@@ -168,12 +168,8 @@ footer {
 .results-header h2 {
     color: #003245;
     font-family: Oswald, sans-serif;
-
-
     font-size: 2rem;
 }
-
-
 
 /* SOURCES ------------------------ */
 
@@ -242,8 +238,19 @@ ul.term-details li span.title {
     display: inline-block;
     width: 15%;
 }
+ul.term-details li span.value {
+    display: inline-block;
+    width: 85%;
+}
 
-/* No Filters Panel */
+
+
+/* Freeze Static Pages ------------------------------- */
+
+.glossary-container.full-width {
+    grid-template-columns: 1fr;
+}
+
 
 
 @media (max-width: 768px) {
@@ -252,6 +259,9 @@ ul.term-details li span.title {
     }
     ul.term-details li span.title {
         width: 25%;
+    }
+    ul.term-details li span.value {
+        width: 75%;
     }
      .results-panel {
         padding: 1.5rem;
@@ -263,6 +273,9 @@ ul.term-details li span.title {
     }
     ul.term-details li span.title {
         display: block;
+        width: 100%;
+    }
+    ul.term-details li span.value {
         width: 100%;
     }
     header.main-header {

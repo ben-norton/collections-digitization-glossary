@@ -15,7 +15,7 @@
         <section class="detail-content">
             <h3>Definition</h3>
             <p class="definition-text text-block">{{ term.definition }}</p>
-            {% if term.usage_note != 'Empty' %}
+            {% if term.usage_note is defined and term.usage_note == term.usage_note %}
                 <h4>Usage Note</h4>
                 <p class="usage-notes text-block">{{ term.usage_note }}</p>
             {%  endif %}
@@ -27,8 +27,8 @@
                 <li><span class="title">PROV Class:</span><span class="value">{{ term.prov_class }}</span></li>
                 <li><span class="title">Status:</span><span class="value">{{ term.status }}</span></li>
 
-                {% if term.uri != 'Empty' %}
-                    <li><span class="title">Source URI:</span><span class="value"><a href="{{ term.uri }}">{{ term.uri }}</a></span></li>
+                {% if term.url is defined and term.url == term.url %}
+                    <li><span class="title">Source URI:</span><span class="value"><a href="{{ term.uri }}">{{ term.url }}</a></span></li>
                 {% endif %}
                 {% if term.source != 'Empty' %}
                 <li><span class="title">Source:</span><span class="value">{{ term.source }}</span></li>

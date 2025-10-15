@@ -8,7 +8,7 @@ import sys
 app = Flask(__name__)
 
 # Source Files
-glossary_csv = 'data/glossary-entries.csv'
+glossary_csv = 'data/glossary-terms.csv'
 df = pd.read_csv(glossary_csv, encoding='utf-8')
 
 sources_csv = 'data/glossary-sources.csv'
@@ -17,6 +17,7 @@ df_sources = pd.read_csv(sources_csv, encoding='utf-8')
 # CONFIG
 with open('meta.yml') as metadata:
     meta = yaml.safe_load(metadata)
+
 
 @app.errorhandler(404)
 def page_not_found(error):
@@ -61,7 +62,6 @@ def index():
 
     # Convert to list of dictionaries
     terms = filtered_df.to_dict(orient='records')
-    print(terms)
 
     # Get all unique categories and tags for filters
     all_categories = sorted(df['category'].unique().tolist())
