@@ -1,5 +1,6 @@
 # Museum Collections Glossary
-This repository and associated website contains a glossary of terms and associated resources in the 
+Glossary Homepage: https://collections-glossary.geoapis.io/
+This repository and associated website contain a glossary of terms and related resources in the 
 museum collections domain, with a focus on digitization and workflows.
 
 ## Glossary Versions
@@ -7,12 +8,12 @@ The current version of the glossary is published here: https://ben-norton.github
 Each version of the glossary is stored as a timestamped CSV file in the /data/sources folder. The latest version has the most recent timestamp.
 
 ## Publication Workflow
-The glossary is published as a collection of webpages generated with Python Flask. The codebase is located under the app folder. See the requirements.txt file for the complete stack. 
+The glossary is published as a collection of web pages generated using Python Flask. The codebase is located under the app folder. See the requirements.txt file for the complete stack. 
 
 ## Directories
 /sources - Source files
 /utils - Utility scripts for transforming and publishing source files
-/web - html website generated using python flask
+/web - html website generated using Python Flask
 
 ## Issues
 Please use the templates and GitHub issue tracker to submit questions, problems, or concerns.
