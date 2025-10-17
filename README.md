@@ -1,5 +1,6 @@
 # Museum Collections Glossary
 **Glossary Homepage:** https://collections-glossary.geoapis.io/  
+  
 This repository and associated website contain a glossary of terms and related resources in the 
 museum collections domain, with a focus on digitization and workflows.
 
@@ -18,4 +19,4 @@ The glossary is published as a collection of web pages generated using Python Fl
 Please use the templates and GitHub issue tracker to submit questions, problems, or concerns.
 
 ## Contact
-The glossary was authored and published by Ben Norton (michaelnorton.ben@gmail.com). A complete list of term attributions are located in the glossary sources csv file and the sources page (<https://ben-norton.github.io/specimen-digitization-glossary/sources/index.html>)
+The glossary was authored and published by Ben Norton (michaelnorton.ben@gmail.com). A complete list of term attributions can be found in the glossary sources CSV file and on the sources page.
