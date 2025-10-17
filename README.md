@@ -1,5 +1,5 @@
 # Museum Collections Glossary
-Glossary Homepage: https://collections-glossary.geoapis.io/
+**Glossary Homepage:** https://collections-glossary.geoapis.io/  
 This repository and associated website contain a glossary of terms and related resources in the 
 museum collections domain, with a focus on digitization and workflows.
 
