@@ -4,7 +4,6 @@ This repository and associated website contain a glossary of terms and related r
 museum collections domain, with a focus on digitization and workflows.
 
 ## Glossary Versions
-The current version of the glossary is published here: https://ben-norton.github.io/specimen-digitization-glossary/
 Each version of the glossary is stored as a timestamped CSV file in the /data/sources folder. The latest version has the most recent timestamp.
 
 ## Publication Workflow
