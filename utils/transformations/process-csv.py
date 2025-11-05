@@ -53,3 +53,4 @@ def process_csv_files():
 	app_sources_csv = str(app_data_path) + '/glossary-sources.csv'
 	shutil.copy(target_sources_csv, app_sources_csv)
 
+process_csv_files()

@@ -14,7 +14,7 @@ def get_today():
     return ts
 
 def get_latest_glossary_file() -> Path:
-    return Path(get_project_root(), "data/sources/digitization-glossary-20251015.csv")
+    return Path(get_project_root(), "data/sources/digitization-glossary-20251105.csv")
 
 def get_latest_sources_file() -> Path:
-    return Path(get_project_root(), "data/sources/digitization-glossary-sources-20251015.csv")
+    return Path(get_project_root(), "data/sources/digitization-glossary-sources-20251105.csv")
