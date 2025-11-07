@@ -20,6 +20,9 @@ Ubuntu Server 22.04 LTS
 ## Publication Workflow
 The glossary is published as a collection of web pages generated using Python Flask. The codebase is located under the app folder. See the requirements.txt file for the complete stack. 
 
+## Glossary Versions
+Each version of the glossary is stored as a timestamped CSV file in the /data/sources folder. The latest version has the most recent timestamp.
+
 ## Directories
 /sources - Source files  
 /utils - Utility scripts for transforming and publishing source files  
