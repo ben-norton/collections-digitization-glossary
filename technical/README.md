@@ -12,7 +12,7 @@ file for the list of Python packages used to process and generate the published 
 The glossary is updated regularly, reflected in date-based versioning.
 
 ## Production Environment
-Python 3.12  
+Python 3.12   
 NGINX  
 Gunicorn  
 Ubuntu Server 22.04 LTS  
@@ -21,9 +21,9 @@ Ubuntu Server 22.04 LTS
 The glossary is published as a collection of web pages generated using Python Flask. The codebase is located under the app folder. See the requirements.txt file for the complete stack. 
 
 ## Directories
-/sources - Source files
-/utils - Utility scripts for transforming and publishing source files
-/web - html website generated using Python Flask
+/sources - Source files  
+/utils - Utility scripts for transforming and publishing source files  
+/web - html website generated using Python Flask  
 
 ## Update Procedure
 

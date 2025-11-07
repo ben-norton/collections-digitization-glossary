@@ -123,6 +123,24 @@ footer {
     padding: 2rem 0;
     margin-top: 4rem;
     text-align: center;
+    background: #004643;
+}
+footer ul.footer-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+footer ul.footer-links li {
+    color: rgb(235,235,235);
+    text-align: left;
+    line-height: 2;
+    font-size: 14px;
+}
+footer ul.footer-links li a {
+    color: rgb(220,220,220);
+    text-decoration: underline;
+}
+footer ul.footer-links li a:hover {
+    color: #FFFFFF;
 }
 /* GLOSSARY ----------------------------------------- */
 
