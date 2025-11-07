@@ -4,14 +4,14 @@ import markdown2
 import pandas as pd
 import yaml
 import sys
-
+import numpy as np
 app = Flask(__name__)
 
 # Source Files
-glossary_csv = 'data/glossary-terms.csv'
+glossary_csv = 'static/data/glossary-terms.csv'
 df = pd.read_csv(glossary_csv, encoding='utf-8')
 
-sources_csv = 'data/glossary-sources.csv'
+sources_csv = 'static/data/glossary-sources.csv'
 df_sources = pd.read_csv(sources_csv, encoding='utf-8')
 
 # CONFIG
@@ -42,6 +42,7 @@ def index():
     sort_by = request.args.get('sort_by', 'term')
 
     # Start with full glossary
+
     filtered_df = df.copy()
 
     # Apply search filter
@@ -53,8 +54,7 @@ def index():
 
     # Apply category filter
     if category:
-        filtered_df = filtered_df[filtered_df['category'] == category]
-
+        filtered_df = filtered_df[filtered_df['category'].astype(str) == category]
 
     # Sort results
     if sort_by in filtered_df.columns:
@@ -64,7 +64,7 @@ def index():
     terms = filtered_df.to_dict(orient='records')
 
     # Get all unique categories and tags for filters
-    all_categories = sorted(df['category'].unique().tolist())
+    all_categories = sorted(df['category'].astype(str).unique().tolist())
 #    all_tags = sorted(set([tag.strip() for tags in df['tags'] for tag in tags.split(',')]))
 
     return render_template('glossary.html',
@@ -74,7 +74,7 @@ def index():
                            current_category=category,
                            current_sort=sort_by,
                            total_count=len(terms),
-                            active_page='glossary')
+                           active_page='glossary')
 
 @app.route('/term/<int:term_id>/')
 def term_detail(term_id):

@@ -4,16 +4,18 @@
 This repository and associated website contain a glossary of terms and related resources in the 
 museum collections domain, with a focus on digitization and workflows.
 
+## Citations
+To cite this repository, please use the following:
+Norton B. Collections Digitization Glossary GitHub Repository [Computer software]. https://github.com/ben-norton/collections-digitization-glossary
+
+To cite individual terms in the glossary, please see the term source.
+
+To cite the entire glossary, please use the following:
+Norton B. (2025) Collections Digitization Glossary. Accessed on: m d, yyyy. [Online] Available: [https://collections-digitization-glossary.com]
+*Replace m d, yyyy with the abbreviated month, day of the month, and four-digit year. Example: Jan. 2, 2025.
+
 ## Glossary Versions
 Each version of the glossary is stored as a timestamped CSV file in the /data/sources folder. The latest version has the most recent timestamp.
-
-## Publication Workflow
-The glossary is published as a collection of web pages generated using Python Flask. The codebase is located under the app folder. See the requirements.txt file for the complete stack. 
-
-## Directories
-/sources - Source files
-/utils - Utility scripts for transforming and publishing source files
-/web - html website generated using Python Flask
 
 ## Issues
 Please use the templates and GitHub issue tracker to submit questions, problems, or concerns.

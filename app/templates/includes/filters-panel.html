@@ -42,8 +42,8 @@
                 <a href="{{ url_for('index') }}" class="btn-secondary">Clear All</a>
             </div>
         </form>
-    {% if current_search or current_category or current_tag %}
-        <div class="active-filters">
+        {% if current_search or current_category or current_tag %}
+            <div class="active-filters">
             <h3>Active Filters:</h3>
             <ul>
                 {% if current_search %}
@@ -55,5 +55,6 @@
             </ul>
         </div>
         {% endif %}
+
     </aside>
-    </aside>
+
