@@ -1,4 +1,4 @@
-# Museum Collections Glossary
+# Museum Collections Digitization Glossary
 **Glossary Homepage:** https://collections-glossary.geoapis.io/  
   
 This repository and associated website contain a glossary of terms and related resources in the 
