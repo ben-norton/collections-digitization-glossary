@@ -7,7 +7,7 @@ museum collections domain, with a focus on digitization and workflows.
 [![DOI](https://zenodo.org/badge/1067966349.svg)](https://doi.org/10.5281/zenodo.17555293)
 	
 ## Citations
-To cite this repository, please use the following:
+To cite this repository, please use the following:  
 Norton B. Collections Digitization Glossary GitHub Repository [Computer software]. https://github.com/ben-norton/collections-digitization-glossary. https://doi.org/10.5281/zenodo.17555293
 
 To cite individual terms in the glossary, please see the term source.
