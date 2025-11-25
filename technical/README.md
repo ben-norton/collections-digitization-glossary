@@ -26,7 +26,7 @@ Each version of the glossary is stored as a timestamped CSV file in the /data/so
 ## Directories
 /sources - Source files  
 /utils - Utility scripts for transforming and publishing source files  
-/web - html website generated using Python Flask  
+/web - HTML website generated using Python Flask  
 
 ## Update Procedure
 
