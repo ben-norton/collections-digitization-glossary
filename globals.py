@@ -13,11 +13,14 @@ def get_today():
     ts = today.strftime("%Y%m%d")
     return ts
 
+def get_modified_date():
+    today = date.today()
+    ts = today.strftime("%Y-%m-%d")
+    return ts
+
 def get_latest_glossary_file() -> Path:
-    return Path(get_project_root(), "data/sources/digitization-glossary-20251208.csv")
+    return Path(get_project_root(), "data/sources/digitization-glossary-20260211.tsv")
 
 def get_latest_sources_file() -> Path:
-    return Path(get_project_root(), "data/sources/digitization-glossary-sources-20251208.csv")
+    return Path(get_project_root(), "data/sources/digitization-glossary-sources-20260211.csv")
 
-def get_latest_glossary_text_file() -> Path:
-    return Path(get_project_root(), "data/collections-digitization-glossary_20251208.txt")

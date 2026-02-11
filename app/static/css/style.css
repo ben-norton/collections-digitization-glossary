@@ -132,15 +132,24 @@ footer ul.footer-links {
 footer ul.footer-links li {
     color: rgb(235,235,235);
     text-align: left;
-    line-height: 2;
-    font-size: 14px;
+    line-height: 1.4;
+    font-size: 0.85rem;
+    padding-bottom: 10px;
 }
-footer ul.footer-links li a {
+footer p {
+    text-align: left;
+    font-size: 0.9rem;
+}
+footer a {
     color: rgb(220,220,220);
     text-decoration: underline;
 }
-footer ul.footer-links li a:hover {
+footer a:hover {
     color: #FFFFFF;
+}
+
+footer img {
+    padding: 20px;
 }
 /* GLOSSARY ----------------------------------------- */
 
@@ -187,6 +196,18 @@ footer ul.footer-links li a:hover {
     color: #003245;
     font-family: Oswald, sans-serif;
     font-size: 2rem;
+}
+.main-header .container {
+    position: relative;
+}
+.title-container .tagline {
+    margin-bottom: 0;
+}
+p.footnote {
+    font-size: 1rem;
+    color: rgb(220,220,220);
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 /* SOURCES ------------------------ */
@@ -261,8 +282,37 @@ ul.term-details li span.value {
     width: 85%;
 }
 
+/* About Page ------------------------------------------------------- */
+.about-page-container .content-wrapper .col-md-8 ul > li {
+    padding-bottom: 10px;
+}
+.about-page-container .content-wrapper .col-md-8 ul li ul li {
+    padding: 0 0 3px 0;
+}
+h4.list-title {
+    font-family: Oswald, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+ul.download-list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
 
-
+}
+ul.download-list li {
+    padding-bottom: 8px;
+}
+a.download-link {
+    color: rgba(13,110,253,1);
+    transition: all .5s ease;
+}
+.about-page-container .card {
+    padding: 1rem;
+    border-width: 0.75px;
+    border-color: rgba(0, 0, 0, 0.175);
+}
 /* Freeze Static Pages ------------------------------- */
 
 .glossary-container.full-width {

@@ -32,7 +32,7 @@ def process_csv_files():
 	# ---------------------------------------------------
 	# TRANSFORM AND SAVE
 
-	glossary_df = pd.read_csv(glossary_csv, encoding="utf8")
+	glossary_df = pd.read_csv(glossary_csv, sep='\t', encoding="utf8")
 	glossary_df.columns = map(str.lower, glossary_df.columns)
 	# Add timestamp column
 	glossary_df['last_modified'] = ts

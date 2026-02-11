@@ -30,10 +30,6 @@ def internal_error(error):
                            pageTitle='500 Unknown Error'), 500
 
 
-with open('meta.yml') as metadata:
-    meta = yaml.safe_load(metadata)
-
-
 @app.route('/')
 def index():
     # Get filter parameters
@@ -66,8 +62,9 @@ def index():
     # Get all unique categories and tags for filters
     all_categories = sorted(df['category'].astype(str).unique().tolist())
 #    all_tags = sorted(set([tag.strip() for tags in df['tags'] for tag in tags.split(',')]))
-
+    print(meta)
     return render_template('glossary.html',
+                           lastModified=meta['last_modified'],
                            terms=terms,
                            all_categories=all_categories,
                            current_search=search,
@@ -88,6 +85,7 @@ def sources():
     sources = df_sources.to_dict(orient='records')
 
     return render_template('sources.html',
+                           lastModified=meta['last_modified'],
                            sources=sources,
                             active_page = 'sources',
                            )
@@ -99,6 +97,7 @@ def about():
         marked_text = markdown2.markdown(f.read(), extras=["tables", "fenced-code-blocks"])
 
     return render_template('about.html',
+                           lastModified=meta['last_modified'],
                            about_markdown=Markup(marked_text),
                            active_page='about',
                            slug='about')

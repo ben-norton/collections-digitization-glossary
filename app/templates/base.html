@@ -17,8 +17,11 @@
  {% include 'includes/navbar.html' %}
     <header class="main-header">
         <div class="container">
-            <h1><a href="{{ url_for('index') }}">Collections Digitization Glossary</a></h1>
-            <p class="tagline">A defined term set in the domain of museum collections digitization</p>
+            <div class="title-container">
+                <h1><a href="{{ url_for('index') }}">Collections Digitization Glossary</a></h1>
+                <p class="tagline">A defined term set in the domain of museum collections digitization</p>
+                <p class="footnote p-0"><em>Last Updated: {{ lastModified }}</em></p>
+            </div>
         </div>
     </header>
 
@@ -30,14 +33,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <ul class="footer-links">
-                    <li>Ben Norton <a href="mailto:michaelnorton.ben@gmail.com">michaelnorton.ben@gmail.com</a></li>
-                    <li>Questions, Concerns, or Corrections? Please submit a <a href="https://github.com/ben-norton/collections-digitization-glossary/issues">GitHub Issue</a></li>
-                    <li>See <a href="https://github.com/ben-norton/collections-digitization-glossary/blob/main/README.md">README in GitHub Repository</a> for Citation Information</li>
-                    <li>The glossary is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International (CC-BY-NC 4.0)</a></li>
-
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>This project is maintained by Ben Norton (<a href="mailto:michaelnorton.ben@gmail.com">michaelnorton.ben@gmail.com</a>), with source
+                                code available in the <a href="https://github.com/ben-norton/collections-digitization-glossary">collections-digitization-glossary</a>
+                                GitHub repository. The glossary was developed as part of the iSamples Documentation Project in collaboration with the
+                                <a href="https://www.si.edu/museums/natural-history-museum">National Museum of Natural History, Smithsonian Institution</a>.</p>
+                            <ul class="footer-links">
+                                <li>Questions, Concerns, or Corrections? Please submit a <a href="https://github.com/ben-norton/collections-digitization-glossary/issues">GitHub Issue</a></li>
+                                <li>See <a href="https://github.com/ben-norton/collections-digitization-glossary/blob/main/README.md">README</a> in GitHub Repository for Citation Information</li>
+                                <li>The glossary is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International (CC-BY-NC 4.0)</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="{{ url_for('static', filename='images/isamples_logo_white_250x157.png') }}" class="img-fluid" alt="iSamples Logo">
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ url_for('static', filename='images/nmnh_logo_white_250x212.png') }}" class="img-fluid" alt="Smithsonian Logo">
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </footer>
