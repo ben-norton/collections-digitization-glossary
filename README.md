@@ -18,6 +18,5 @@ Norton B. (2025) Collections Digitization Glossary. Accessed on: MM DD, YYYY. [O
 ## Issues
 Please use the templates and GitHub issue tracker to submit questions, problems, or concerns.
 
-
 ## Contact
 The glossary was authored and published by Ben Norton (michaelnorton.ben@gmail.com). A complete list of term attributions can be found in the glossary sources CSV file and on the sources page.

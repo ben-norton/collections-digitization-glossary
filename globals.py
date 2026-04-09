@@ -19,7 +19,7 @@ def get_modified_date():
     return ts
 
 def get_latest_glossary_file() -> Path:
-    return Path(get_project_root(), "data/sources/digitization-glossary-20260211.tsv")
+    return Path(get_project_root(), "data/sources/digitization-glossary-20260305.tsv")
 
 def get_latest_sources_file() -> Path:
     return Path(get_project_root(), "data/sources/digitization-glossary-sources-20260211.csv")

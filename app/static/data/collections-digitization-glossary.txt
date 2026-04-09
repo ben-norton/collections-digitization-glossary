@@ -18,7 +18,7 @@ This Document
 prov:Activity
 
 accession-assessment
-20260211
+20260305
 
 Accessioning
 Collections
@@ -29,7 +29,7 @@ Master Glossary for DOI Museum Property Directives
 prov:Activity
 
 accessioning
-20260211
+20260305
 
 Acquisition
 Collections
@@ -40,7 +40,7 @@ ISO 21246:2019(en), http://purl.obolibrary.org/obo/OBI_0600008, Master Glossary 
 prov:Activity
 
 acquisition
-20260211
+20260305
 
 Action
 Global
@@ -51,7 +51,7 @@ ISO/IEC 15938-5
 prov:Activity
 
 action
-20260211
+20260305
 
 Action Specification
 Global
@@ -62,7 +62,7 @@ Semantic Science Ontology
 prov:Plan
 
 action-specification
-20260211
+20260305
 
 Activity
 Workflows
@@ -73,7 +73,7 @@ PROV-O: The PROV Ontology
 prov:Entity
 
 activity
-20260211
+20260305
 
 Agent
 Global
@@ -84,7 +84,7 @@ PROV-O: The PROV Ontology
 prov:Entity
 
 agent
-20260211
+20260305
 
 Anthropology
 Collections
@@ -95,7 +95,7 @@ Modern Science Ontology
 prov:Activity
 
 anthropology
-20260211
+20260305
 
 Archaeological material
 Collections
@@ -106,7 +106,7 @@ ArCo Ontology - Architecture of Knowledge
 prov:Entity
 
 archaeological-material
-20260211
+20260305
 
 Archaeology
 Collections
@@ -117,7 +117,7 @@ Modern Science Ontology
 prov:Activity
 
 archaeology
-20260211
+20260305
 
 Archival Resource Key
 Identifiers
@@ -128,7 +128,7 @@ https://arks.org/
 prov:Entity
 https://example.org/ark:/12345/x54xz321/s3/f8.05v.tiff
 ark
-20260211
+20260305
 
 Asset
 Global
@@ -139,7 +139,7 @@ Repository Asset Distribution (RADion)
 prov:Entity
 
 asset
-20260211
+20260305
 
 Astromaterial
 Collections
@@ -150,7 +150,7 @@ This Document
 prov:Entity
 
 astromaterial
-20260211
+20260305
 
 Astromaterial Collection
 Collections
@@ -161,7 +161,7 @@ This Document
 prov:Entity
 
 astromaterial-collection
-20260211
+20260305
 
 Barcode
 Collections
@@ -172,7 +172,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Entity
 
 barcode
-20260211
+20260305
 
 Bioinformatics Pipeline
 Data
@@ -183,7 +183,7 @@ Next Generation Biobanking Ontology
 prov:Entity
 
 bioinformatics-pipeline
-20260211
+20260305
 
 Biological Collection
 Collections
@@ -194,7 +194,7 @@ This Document
 prov:Entity
 
 
-20260211
+20260305
 
 Biological Material
 Collections
@@ -205,7 +205,7 @@ Based on the Darwin Core term, Material Sample (http://rs.tdwg.org/dwc/terms/Mat
 prov:Entity
 
 
-20260211
+20260305
 
 Biological Object
 Collections
@@ -216,7 +216,7 @@ Definition of the CIDOC Conceptual Reference Model version 7.1.3
 prov:Entity
 
 biological-object
-20260211
+20260305
 
 Biology
 Collections
@@ -227,7 +227,7 @@ Modern Science Ontology
 prov:Activity
 
 biology
-20260211
+20260305
 
 Catalog Record
 Collections
@@ -238,7 +238,7 @@ Master Glossary for DOI Museum Property Directives
 prov:Entity
 
 catalog-record
-20260211
+20260305
 
 Collection
 Collections
@@ -249,7 +249,7 @@ Lightweight Information Describing Objects
 prov:Entity
 
 collection
-20260211
+20260305
 
 Collection Management
 Collections
@@ -260,7 +260,7 @@ ISO 18461:2016 International museum statistics
 prov:Activity
 
 collection-management
-20260211
+20260305
 
 Collection Management System
 Collections
@@ -271,7 +271,7 @@ This Document
 prov:Entity
 
 collection-management-system
-20260211
+20260305
 
 Collection Object
 Collections
@@ -282,7 +282,7 @@ This Document
 prov:Entity
 
 collection-object
-20260211
+20260305
 
 Collection Workflow
 Workflows
@@ -293,7 +293,7 @@ This Document
 prov:Activity
 
 collection-workflow
-20260211
+20260305
 
 Concept Harmonization
 Data
@@ -304,7 +304,7 @@ ISO 19104:2016(en) Geographic information — Terminology
 prov:Activity
 
 concept-harmonization
-20260211
+20260305
 
 Conservator
 Roles
@@ -315,7 +315,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Role
 
 conservator
-20260211
+20260305
 
 Contributor
 Roles
@@ -326,7 +326,7 @@ DCMI Metadata Terms
 prov:Role
 
 contributor
-20260211
+20260305
 
 Crystallography
 Collections
@@ -337,7 +337,7 @@ Modern Science Ontology
 prov:Activity
 
 crystallography
-20260211
+20260305
 
 Cultural Heritage
 Collections
@@ -348,7 +348,7 @@ ISO 18461:2016(en) International museum statistics
 prov:Entity
 
 cultural-heritage
-20260211
+20260305
 
 Cultural Studies
 Collections
@@ -359,7 +359,7 @@ Modern Science Ontology
 prov:Activity
 
 cultural-studies
-20260211
+20260305
 
 Curated Holding
 Collections
@@ -370,7 +370,7 @@ Definition of the CIDOC Conceptual Reference Model version 7.1.3
 prov:Entity
 
 curated-holding
-20260211
+20260305
 
 Curator
 Collections
@@ -381,7 +381,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Role
 
 curator
-20260211
+20260305
 
 Data Archiving
 Workflows
@@ -392,7 +392,7 @@ EDAM - Ontology of bioscientific data analysis and data management
 prov:Activity
 
 data-curation-and-archival
-20260211
+20260305
 
 Data Capture
 Data
@@ -403,7 +403,7 @@ ISO 18530:2021 Health informatics — Automatic identification and data capture 
 prov:Activity
 
 data-capture
-20260211
+20260305
 
 Data Cleaning
 Data
@@ -414,7 +414,7 @@ The Workflow Motif Ontology
 prov:Activity
 
 data-cleaning
-20260211
+20260305
 
 Data Collector
 Roles
@@ -425,7 +425,7 @@ Adopted from http://w3id.org/nfdi4ing/metadata4ing#DataCollector
 prov:Role
 
 data-collector
-20260211
+20260305
 
 Data Curation
 Data
@@ -436,7 +436,7 @@ Ontology for Scientific Evidence and Provenance Information
 prov:Activity
 
 data-curation
-20260211
+20260305
 
 Data Curation Workflow
 Workflows
@@ -447,7 +447,7 @@ terms4FAIRskills
 prov:Activity
 
 data-curation-workflow
-20260211
+20260305
 
 Data Curator
 Roles
@@ -458,7 +458,7 @@ DataCite Metadata Scheme
 prov:Role
 
 data-curator
-20260211
+20260305
 
 Data Entry
 Data
@@ -469,7 +469,7 @@ NCI Thesaurus OBO Edition
 prov:Activity
 
 data-entry
-20260211
+20260305
 
 Data Governance
 Data
@@ -480,7 +480,7 @@ EDAM - Ontology of bioscientific data analysis and data management
 prov:Plan
 
 data-governance
-20260211
+20260305
 
 Data Integration
 Data
@@ -491,7 +491,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Plan
 
 data-integration
-20260211
+20260305
 
 Data Lifecycle
 Data
@@ -502,7 +502,7 @@ terms4FAIRskills
 prov:Plan
 
 data-lifecycle
-20260211
+20260305
 
 Data Management Plan
 Data
@@ -513,7 +513,7 @@ terms4FAIRskills
 prov:Plan
 
 data-management-plan
-20260211
+20260305
 
 Data Manager
 Roles
@@ -524,7 +524,7 @@ NCI Thesaurus OBO Edition
 prov:Role
 
 data-manager
-20260211
+20260305
 
 Data Migration
 Data
@@ -535,7 +535,7 @@ Master Glossary for DOI Museum Property Directives
 prov:Activity
 
 data-migration
-20260211
+20260305
 
 Data Mobility
 Data
@@ -546,7 +546,7 @@ This Document
 prov:Activity
 
 data-mobility
-20260211
+20260305
 
 Data Policy
 Data
@@ -557,7 +557,7 @@ terms4FAIRskills
 prov:Plan
 
 data-policy
-20260211
+20260305
 
 Data Preparation
 Data
@@ -568,7 +568,7 @@ This Document
 prov:Activity
 
 data-preparation
-20260211
+20260305
 
 Data Product
 Data
@@ -579,7 +579,7 @@ Adopted from ISO 21961:2003, https://www.ica.org/standards/RiC/ontology#DataProd
 prov:Entity
 
 data-product
-20260211
+20260305
 
 Data Product Specification
 Data
@@ -590,7 +590,7 @@ ISO 19126:2021(en) Geographic information — Feature concept dictionaries and r
 prov:Plan
 
 data-product-specification
-20260211
+20260305
 
 Data Profiling
 Data
@@ -601,7 +601,7 @@ terms4FAIRskills
 prov:Activity
 
 data-profiling
-20260211
+20260305
 
 Data Provider
 Roles
@@ -612,7 +612,7 @@ ISO 17369:2013(en) Statistical data and metadata exchange (SDMX)
 prov:Role
 
 data-provider
-20260211
+20260305
 
 Data Publication Workflow
 Workflows
@@ -623,7 +623,7 @@ Adopted from http://purl.obolibrary.org/obo/T4FS_0000190
 prov:Activity
 
 data-publication-workflow
-20260211
+20260305
 
 Data Publishing
 Data
@@ -634,7 +634,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Activity
 
 data-publishing
-20260211
+20260305
 
 Data Quality
 Data
@@ -645,7 +645,7 @@ terms4FAIRskills
 prov:Plan
 
 data-quality
-20260211
+20260305
 
 Data Steward
 Roles
@@ -656,7 +656,7 @@ Adopted from ISO/TR 14872:2019 and http://purl.obolibrary.org/obo/T4FS_0000178, 
 prov:Role
 
 data-steward
-20260211
+20260305
 
 Data Transformation
 Data
@@ -667,7 +667,7 @@ NCI Thesaurus OBO Edition
 prov:Activity
 
 data-transformation
-20260211
+20260305
 
 Data Validation
 Data
@@ -678,7 +678,7 @@ terms4FAIRskills
 prov:Activity
 
 data-validation
-20260211
+20260305
 
 Dataset
 Data
@@ -689,7 +689,7 @@ ISO 19101-1:2014(en) Geographic information — Reference model — Part 1: Fund
 prov:Entity
 Data products such as images, catalogs, parameter files, calibration data, instrument characteristics, articles, and web pages
 dataset
-20260211
+20260305
 
 Deaccession
 Collections
@@ -700,7 +700,7 @@ Art Glossary: Definitions of Common Art Terms and Techniques
 prov:Activity
 
 deaccession
-20260211
+20260305
 
 Derivation
 Global
@@ -711,7 +711,7 @@ The PROV Namespace
 prov:Entity
 
 derivation
-20260211
+20260305
 
 Determination
 Collections
@@ -722,7 +722,7 @@ CIDOC Conceptual Reference Model version 7.1.3
 prov:Entity
 
 determination
-20260211
+20260305
 
 Digital Collections
 Collections
@@ -733,7 +733,7 @@ Lightweight Information Describing Objects
 prov:Entity
 
 digital-collections
-20260211
+20260305
 
 Digital Object Identifier
 Identifiers
@@ -744,7 +744,7 @@ https://www.doi.org/, ISO 26324:2025 Information and documentation—Digital obj
 prov:Entity
 https://doi.org/10.1000/182
 doi
-20260211
+20260305
 
 Digitization
 Collections
@@ -755,18 +755,18 @@ ISO 21246:2019 Information and documentation — Key indicators for museums
 prov:Activity
 
 digitization
-20260211
+20260305
 
 Digitization Backlog
 Collections
-Collection objects in the physical custody of a collection that have not completed the verbatim data capture or acquisition phase of a digitization project.
+Accessioned collection objects for which digitization has not yet begun — meaning no specimen metadata has been captured in a collections management system or similar software.
 In the broadest sense of the term, the backlog consists of incomplete digital records, which prohibits the digitization process from advancing to the data curation and archival phase. 
 
 This Document
 prov:Entity
 
 backlog
-20260211
+20260305
 
 Distribution
 Collections
@@ -777,7 +777,7 @@ Adopted from http://schema.org/distribution and https://www.w3.org/ns/dcat#Distr
 prov:Entity
 
 distribution
-20260211
+20260305
 
 Distribution Phase
 Workflows
@@ -788,7 +788,7 @@ This Document
 prov:Plan
 
 distribution-phase
-20260211
+20260305
 
 Entity
 Global
@@ -799,7 +799,7 @@ PROV-O
 prov:Entity
 
 entity
-20260211
+20260305
 
 Environmental Science
 Collections
@@ -810,7 +810,7 @@ Modern Science Ontology
 prov:Activity
 
 environmental-science
-20260211
+20260305
 
 Event
 Global
@@ -821,7 +821,7 @@ International Council on Archives Records in Contexts Ontology (ICA RiC-O) versi
 prov:Activity
 
 event
-20260211
+20260305
 
 Event Type
 Global
@@ -832,7 +832,7 @@ International Council on Archives Records in Contexts Ontology (ICA RiC-O) versi
 prov:Activity
 
 event-type
-20260211
+20260305
 
 Extract Transform Load
 Data
@@ -843,7 +843,7 @@ Adopted from http://purl.obolibrary.org/obo/IAO_0000650 and http://purl.obolibra
 prov:Activity
 
 extract-transform-load
-20260211
+20260305
 
 FAIR Principles
 Data
@@ -854,7 +854,7 @@ terms4FAIRskills
 prov:Plan
 
 fair-principles
-20260211
+20260305
 
 Feature of Interest
 Data
@@ -865,7 +865,7 @@ Semantic Sensor Network Ontology
 prov:Entity
 
 feature-of-interest
-20260211
+20260305
 
 Field
 Data
@@ -876,7 +876,7 @@ ISO 9241-125:2017(en) Ergonomics of human-system interaction — Part 125: Guida
 prov:Entity
 
 field
-20260211
+20260305
 
 Field Work
 Collections
@@ -887,7 +887,7 @@ This Document and adopted from ISO 22932-2:2020
 prov:Activity
 
 field-work
-20260211
+20260305
 
 Format Transformation
 Data
@@ -898,7 +898,7 @@ Adopted from http://purl.org/net/wf-motifs#FormatTransformation
 prov:Activity
 
 format-transformation
-20260211
+20260305
 
 Fossil
 Collections
@@ -909,7 +909,7 @@ Neuendorf et al. (2005)
 prov:Entity
 
 
-20260211
+20260305
 
 Functional Specification
 Workflows
@@ -920,7 +920,7 @@ Semanticscience Integrated Ontology
 prov:Plan
 Subclass of Specification
 functional-specification
-20260211
+20260305
 
 Generated
 Global
@@ -931,7 +931,7 @@ W3C PROV Data Model Activity concepts
 prov:Activity
 
 generated
-20260211
+20260305
 
 Geological Collection
 Collections
@@ -942,7 +942,7 @@ This Document
 prov:Entity
 
 
-20260211
+20260305
 
 Geological Material
 Collections
@@ -953,7 +953,7 @@ Adopted from GeoCore Ontology and Geosciences Ontology
 prov:Entity
 
 geological-material
-20260211
+20260305
 
 Geological Specimen
 Collections
@@ -964,7 +964,7 @@ This Document
 prov:Entity
 
 geologic-specimen
-20260211
+20260305
 
 Geology
 Collections
@@ -975,7 +975,7 @@ USGS Thesaurus
 prov:Activity
 
 
-20260211
+20260305
 
 Glossary
 Global
@@ -986,7 +986,7 @@ NCI Thesaurus OBO Edition
 prov:Entity
 
 glossary
-20260211
+20260305
 
 Identifier
 Collections
@@ -997,7 +997,7 @@ International Council on Archives Records in Contexts Ontology (ICA RiC-O) versi
 prov:Entity
 
 identifier
-20260211
+20260305
 
 Identifier assignment
 Workflows
@@ -1008,7 +1008,7 @@ CIDOC Conceptual Reference Model version 7.1.3
 prov:Activity
 
 identifier-assignment
-20260211
+20260305
 
 Initiator
 Workflows
@@ -1019,7 +1019,7 @@ NCI Thesaurus OBO Edition
 prov:Activity
 
 initiator
-20260211
+20260305
 
 International Generic Sample Number
 Identifiers
@@ -1030,7 +1030,7 @@ https://ev.igsn.org/
 prov:Entity
 10.58151/NHB000N08
 igsn
-20260211
+20260305
 
 Internationalized Resource Identifier
 Identifiers
@@ -1041,7 +1041,7 @@ RFC 3987
 prov:Entity
 http://rs.tdwg.org/dwc/iri/preparations
 iri
-20260211
+20260305
 
 Iterative Workflow
 Workflows
@@ -1052,7 +1052,7 @@ Elementary Multiperspective Material Ontology
 prov:Activity
 
 iterative-workflow
-20260211
+20260305
 
 Kind (of)
 Data
@@ -1063,7 +1063,7 @@ This Document
 prov:Entity
 
 kind-of
-20260211
+20260305
 
 Library
 Collections
@@ -1074,7 +1074,7 @@ ISO 18461:2016 International museum statistics
 prov:Entity
 
 library
-20260211
+20260305
 
 Life Science Identifier
 Identifiers
@@ -1085,7 +1085,7 @@ https://www.lsid.info/
 prov:Entity
 http://www.lsid.info/urn:lsid:marinespecies.org:taxname:138474
 lsid
-20260211
+20260305
 
 Loan
 Collections
@@ -1096,7 +1096,7 @@ Master Glossary for DOI Museum Property Directives
 prov:Activity
 
 loan
-20260211
+20260305
 
 Local Identifier
 Data
@@ -1107,7 +1107,7 @@ Lightweight Information Describing Objects
 prov:Entity
 
 local-identifier
-20260211
+20260305
 
 Man-made Object
 Collections
@@ -1118,7 +1118,7 @@ CIDOC Conceptual Reference Model version 7.1.3
 prov:Entity
 
 man-made-object
-20260211
+20260305
 
 Material Entity
 Collections
@@ -1129,7 +1129,7 @@ Basic Form Ontology
 prov:Entity
 
 material-entity
-20260211
+20260305
 
 Material Sample
 Collections
@@ -1140,7 +1140,7 @@ Darwin Core
 prov:Entity
 
 material-sample
-20260211
+20260305
 
 Metadata
 Data
@@ -1151,7 +1151,7 @@ ISO/IEC 5207:2024(en) Information technology — Data usage — Terminology and 
 prov:Entity
 
 metadata
-20260211
+20260305
 
 Mobilization
 Workflows
@@ -1162,7 +1162,7 @@ This Document
 prov:Activity
 
 mobilization
-20260211
+20260305
 
 Module
 Data
@@ -1173,7 +1173,7 @@ NCI Thesaurus OBO Edition
 prov:Entity
 
 module
-20260211
+20260305
 
 Museum
 Collections
@@ -1184,7 +1184,7 @@ The Biological Collections Ontology
 prov:Entity
 
 museum
-20260211
+20260305
 
 Museum Collection
 Collections
@@ -1195,7 +1195,7 @@ The Biological Collections Ontology
 prov:Entity
 
 museum-collection
-20260211
+20260305
 
 Natural Sciences
 Collections
@@ -1206,7 +1206,7 @@ Modern Science Ontology
 prov:Activity
 
 natural-sciences
-20260211
+20260305
 
 Online Collection
 Collections
@@ -1217,7 +1217,7 @@ Lightweight Information Describing Objects
 prov:Entity
 
 online-collection
-20260211
+20260305
 
 Open Researcher and Contributor ID
 Identifiers
@@ -1228,7 +1228,7 @@ https://orcid.org/
 prov:Entity
 https://orcid.org/0000-0002-5819-9134
 orcid
-20260211
+20260305
 
 Organization
 Global
@@ -1239,7 +1239,7 @@ PROV-O: The PROV Ontology
 prov:Entity
 
 organization
-20260211
+20260305
 
 Paleontology
 Collections
@@ -1250,7 +1250,7 @@ USGS Thesaurus
 prov:Activity
 
 
-20260211
+20260305
 
 Paleontology Collection
 Collections
@@ -1261,7 +1261,7 @@ This Document
 prov:Entity
 
 
-20260211
+20260305
 
 Parallel Workflow
 Workflows
@@ -1272,7 +1272,7 @@ Elementary Multiperspective Material Ontology
 prov:Activity
 
 parallel-workflow
-20260211
+20260305
 
 Persistent Identifier
 Identifiers
@@ -1283,7 +1283,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Entity
 https://orcid.org/0000-0002-5819-9134
 pid
-20260211
+20260305
 
 Physical Collection
 Collections
@@ -1294,7 +1294,7 @@ Adopted from http://terminology.lido-schema.org/lido01053
 prov:Entity
 
 physical-collection
-20260211
+20260305
 
 Physical Object
 Collections
@@ -1305,7 +1305,7 @@ CIDOC Conceptual Reference Model version 7.1.3
 prov:Entity
 Information about the Principal Investigator who recorded the data, and the information concerning its storage, handling, and migration.
 physical-object
-20260211
+20260305
 
 Pipeline
 Data
@@ -1316,7 +1316,7 @@ ISO/IEC 11179-34:2024(en) Information technology — Metadata registries (MDR) �
 prov:Entity
 
 pipeline
-20260211
+20260305
 
 Plan
 Workflows
@@ -1327,7 +1327,7 @@ PROV-O: The PROV Ontology
 prov:Entity
 
 plan
-20260211
+20260305
 
 Plan specification
 Workflows
@@ -1338,7 +1338,7 @@ Information Artifact Ontology
 prov:Plan
 
 plan-specification
-20260211
+20260305
 
 Planned process
 Workflows
@@ -1349,7 +1349,7 @@ Core Ontology for Biology and Biomedicine
 prov:Activity
 
 planned-process
-20260211
+20260305
 
 Preparation
 Collections
@@ -1360,7 +1360,7 @@ This Document
 prov:Activity
 
 preparation
-20260211
+20260305
 
 Preparator
 Collections
@@ -1371,7 +1371,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Role
 
 preparator
-20260211
+20260305
 
 Preservation
 Collections
@@ -1382,7 +1382,7 @@ This Document
 prov:Activity
 
 preservation
-20260211
+20260305
 
 Primary Source
 Collections
@@ -1393,7 +1393,7 @@ SDSU Library Guides
 prov:Entity
 
 primary-source
-20260211
+20260305
 
 Procedure
 Workflows
@@ -1404,7 +1404,7 @@ Elementary Multiperspective Material Ontology
 prov:Activity
 
 procedure
-20260211
+20260305
 
 Procedure Specification
 Workflows
@@ -1415,7 +1415,7 @@ Allotrope Foundation Ontology
 prov:Plan
 
 procedure-specification
-20260211
+20260305
 
 Process
 Workflows
@@ -1426,7 +1426,7 @@ Adopted from ISO 12651-2:2014 and https://www.irit.fr/recherches/MELODI/ontologi
 prov:Activity
 
 process
-20260211
+20260305
 
 Process Protocol
 Global
@@ -1437,7 +1437,7 @@ NCI Thesaurus OBO Edition
 prov:Plan
 
 process-protocol
-20260211
+20260305
 
 Project
 Global
@@ -1448,7 +1448,7 @@ ISO 21506:2024  Project, programme and portfolio management — Vocabulary
 prov:Activity
 
 project
-20260211
+20260305
 
 Project Phase
 Workflows
@@ -1459,7 +1459,7 @@ Project Management Glossary of Terms
 prov:Plan
 
 project-phase
-20260211
+20260305
 
 Property
 Workflows
@@ -1470,7 +1470,7 @@ Physicalistic Interpretation of Modelling and Simulation - Interoperability Infr
 prov:Entity
 
 property
-20260211
+20260305
 
 Provenance
 Collections
@@ -1481,7 +1481,7 @@ Adopted from http://purl.obolibrary.org/obo/SEPIO_0000058, Master Glossary for D
 prov:Entity
 
 provenance
-20260211
+20260305
 
 Provenance Statement
 Collections
@@ -1492,7 +1492,7 @@ DMCI Metadata Terms
 prov:Entity
 
 provenance-statement
-20260211
+20260305
 
 Quantity Kind
 Global
@@ -1503,7 +1503,7 @@ QUDT Quantity Kind Vocabulary Version 3.1.5
 prov:Entity
 
 quantity-kind
-20260211
+20260305
 
 Registrar
 Collections
@@ -1514,7 +1514,7 @@ ISO 5127:2017(en) Information and documentation — Foundation and vocabulary
 prov:Role
 
 registrar
-20260211
+20260305
 
 Repository
 Data
@@ -1525,7 +1525,7 @@ terms4FAIRskills
 prov:Entity
 
 repository
-20260211
+20260305
 
 Requirements
 Data
@@ -1536,7 +1536,7 @@ Allotrope Foundation Ontology
 prov:Plan
 
 requirements
-20260211
+20260305
 
 Research Data Publication Workflow
 Workflows
@@ -1547,7 +1547,7 @@ terms4FAIRskills
 prov:Activity
 
 research-data-publication-workflow
-20260211
+20260305
 
 Research Organization Registry Identifier
 Identifiers
@@ -1558,7 +1558,7 @@ https://ror.org/
 prov:Entity
 https://ror.org/01pp8nd67
 ror-id
-20260211
+20260305
 
 Role
 Global
@@ -1569,7 +1569,7 @@ PROV-O Ontology
 prov:Entity
 
 role
-20260211
+20260305
 
 Sample
 Collections
@@ -1580,7 +1580,7 @@ This Document
 prov:Entity
 
 sample
-20260211
+20260305
 
 Sample Collection Data Entry
 Collections
@@ -1591,7 +1591,7 @@ Ontology for BIoBanking (OBIB)
 prov:Activity
 
 sample-collection-data-entry
-20260211
+20260305
 
 Semantic Interoperability
 Data
@@ -1602,7 +1602,7 @@ CIDOC Conceptual Reference Model version 7.1.3
 prov:Plan
 
 semantic-interoperability
-20260211
+20260305
 
 Serial Workflow
 Workflows
@@ -1613,7 +1613,7 @@ Elementary Multiperspective Material Ontology
 prov:Activity
 
 serial-workflow
-20260211
+20260305
 
 Social Sciences
 Collections
@@ -1624,7 +1624,7 @@ Modern Science Ontology
 prov:Activity
 
 social-sciences
-20260211
+20260305
 
 Source Data Verification
 Workflows
@@ -1635,7 +1635,7 @@ NCI Thesaurus OBO Edition
 prov:Activity
 
 source-data-verification
-20260211
+20260305
 
 Space Science
 Collections
@@ -1646,7 +1646,7 @@ Modern Science Ontology
 prov:Activity
 
 space-science
-20260211
+20260305
 
 Specialized Material Entity
 Collections
@@ -1657,7 +1657,7 @@ Semanticscience Integrated Ontology
 prov:Entity
 
 specialized-material-entity
-20260211
+20260305
 
 Specification
 Workflows
@@ -1668,7 +1668,7 @@ Semanticscience Integrated Ontology
 prov:Plan
 
 specification
-20260211
+20260305
 
 Specimen
 Collections
@@ -1679,7 +1679,7 @@ This Document
 prov:Entity
 
 specimen
-20260211
+20260305
 
 Step
 Workflows
@@ -1690,7 +1690,7 @@ Adopted from ISO 12651-2:2014, http://purl.org/spar/pwo/Step
 prov:Plan
 
 step
-20260211
+20260305
 
 Subprocess
 Workflows
@@ -1701,7 +1701,7 @@ BPMN Based Ontology
 prov:Activity
 
 subprocess
-20260211
+20260305
 
 Task
 Workflows
@@ -1712,7 +1712,7 @@ This Document, Usage notes adopted from https://w3id.org/emmo#EMMO_4299e344_a321
 prov:Activity
 
 task
-20260211
+20260305
 
 The Handle system
 Identifiers
@@ -1723,7 +1723,7 @@ https://www.dona.net/handle-system
 prov:Entity
 
 handle
-20260211
+20260305
 
 Tool
 Workflows
@@ -1734,7 +1734,7 @@ Metadata4Ing: An ontology for describing the generation of research data within 
 prov:Entity
 
 tool
-20260211
+20260305
 
 Transaction
 Workflows
@@ -1745,7 +1745,7 @@ Adopted from ISO/IEC TR 15067-3-8:2020 and ISO 6707-2:2017(en), 3.2.53
 prov:Activity
 
 transaction
-20260211
+20260305
 
 Transaction Identifier
 Workflows
@@ -1756,7 +1756,7 @@ This Document
 prov:Entity
 
 transaction-identifier
-20260211
+20260305
 
 Trigger
 Workflows
@@ -1767,7 +1767,7 @@ This Document
 prov:Activity
 
 trigger
-20260211
+20260305
 
 Uniform Resource Identifier
 Identifiers
@@ -1778,7 +1778,7 @@ RFC 3986
 prov:Entity
 http://rs.tdwg.org/dwc/terms/GeologicalContext
 uri
-20260211
+20260305
 
 Universal Resource Name
 Identifiers
@@ -1789,7 +1789,7 @@ RFC 8141
 prov:Entity
 urn:issn:1476-4687
 urn
-20260211
+20260305
 
 Universally Unique Identifier (Version 4)
 Identifiers
@@ -1800,7 +1800,7 @@ RFC 9562
 prov:Entity
 405ebddc-7bec-42f7-97fc-10dbf14004e5
 uuid
-20260211
+20260305
 
 Validation
 Data
@@ -1811,7 +1811,7 @@ Ontology for Biomedical Investigations
 prov:Activity
 
 validation
-20260211
+20260305
 
 Value
 Data
@@ -1822,7 +1822,7 @@ Physicalistic Interpretation of Modelling and Simulation - Interoperability Infr
 prov:Entity
 
 value
-20260211
+20260305
 
 Voucher specimen
 Collections
@@ -1833,7 +1833,7 @@ Master Glossary for DOI Museum Property Directives
 prov:Entity
 
 voucher-specimen
-20260211
+20260305
 
 Workflow
 Workflows
@@ -1844,7 +1844,7 @@ Adopted from EMMO, http://purl.org/spar/fabio/Workflow, http://purl.org/spar/pwo
 prov:Activity
 
 workflow
-20260211
+20260305
 
 Workflow Action
 Workflows
@@ -1855,7 +1855,7 @@ DOLCE+DnS Ultralite ontology
 prov:Activity
 
 workflow-action
-20260211
+20260305
 
 Workflow Branch
 Workflows
@@ -1866,7 +1866,7 @@ This Document
 prov:Entity
 
 workflow-branch
-20260211
+20260305
 
 Workflow Event
 Workflows
@@ -1877,7 +1877,7 @@ Adopted from https://www.irit.fr/recherches/MELODI/ontologies/BBO#Event
 prov:Activity
 
 workflow-event
-20260211
+20260305
 
 Workflow Management System
 Workflows
@@ -1888,7 +1888,7 @@ Workflow Management Coalition Specification Document Number WFMC-TC-1011.
 prov:Entity
 
 workflow-management-system
-20260211
+20260305
 
 Workflow Phase
 Workflows
@@ -1899,7 +1899,7 @@ This Document with contributions from ISO 24635-1:2025 and ISO/TS 16710-1:2024
 prov:Activity
 
 workflow-phase
-20260211
+20260305
 
 Workflow Tool
 Workflows
@@ -1910,5 +1910,5 @@ Adopted from ISO/IEC 23000-15:2016
 prov:Entity
 
 workflow-tool
-20260211
+20260305
 
