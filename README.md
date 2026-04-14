@@ -4,7 +4,7 @@
 This repository and associated website contain a glossary of terms and related resources in the 
 museum collections domain, with a focus on digitization and workflows.
 
-[![DOI](https://zenodo.org/badge/1067966349.svg)](https://doi.org/10.5281/zenodo.17555293)
+![DOI](https://zenodo.org/badge/1067966349.svg)](https://doi.org/10.5281/zenodo.17555293)
 	
 ## Citations
 To cite this repository, please use the following:  
